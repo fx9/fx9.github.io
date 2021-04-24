@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/series-label.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+		<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+		<script language="javascript" src="scripts/algorithms/damage_distribution.js"></script>
+		<script language="javascript" src="scripts/algorithms/gun_vs.js"></script>
+		<script language="javascript" src="scripts/algorithms/headshot_to_parts.js"></script>
+		<script language="javascript" src="scripts/algorithms/quick_ttk.js"></script>
+		<script language="javascript" src="scripts/algorithms/tests.js"></script>
+		<script language="javascript" src="scripts/algorithms/ttk_distribution.js"></script>
+		<script language="javascript" src="scripts/common/all_guns.js"></script>
+		<script language="javascript" src="scripts/common/gun_info.js"></script>
+		<script language="javascript" src="scripts/common/lz-string.js"></script>
+		<script language="javascript" src="scripts/common/make_series.js"></script>
+		<script language="javascript" src="scripts/common/save_data_processing.js"></script>
+
+		<title>Real TTK - Custom Gun</title>
+
+		<style type="text/css">
+			.highcharts-figure, .highcharts-data-table table {
+				min-width: 360px;
+				max-width: 800px;
+				margin: 1em auto;
+			}
+
+			.highcharts-data-table table {
+				font-family: Verdana, sans-serif;
+				border-collapse: collapse;
+				border: 1px solid #EBEBEB;
+				margin: 10px auto;
+				text-align: center;
+				width: 100%;
+				max-width: 500px;
+			}
+			.highcharts-data-table caption {
+				padding: 1em 0;
+				font-size: 1.2em;
+				color: #555;
+			}
+			.highcharts-data-table th {
+				font-weight: 600;
+				padding: 0.5em;
+			}
+			.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+				padding: 0.5em;
+			}
+			.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+				background: #f8f8f8;
+			}
+			.highcharts-data-table tr:hover {
+				background: #f1f7ff;
+			}
+			label {
+				margin: 0
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid px-5 pt-3">
+			<div class="row">
+				<div class="col-4">
+					<div id="options">
+						<h4>Add A Custom Gun</h4>
+						<div>
+							<a id="discard_changes" href="ttk.html"><strong>Discard Changes And Return to TTK Page</strong></a>
+						</div>
+
+						<div>
+							<select class="form-select" id="select_gun"></select>
+							<button class="btn btn-outline-secondary btn-sm" id="use_all_data">Use All Sata</button>
+							<button class="btn btn-outline-secondary btn-sm" id="use_stats">Use Basic Stats</button>
+							<button class="btn btn-outline-secondary btn-sm" id="use_damage">Use Damage Profile</button>
+							<button class="btn btn-outline-secondary btn-sm" id="use_att">Use Attachments</button>
+						</div>
+
+						<strong>Basic Stats</strong>
+						<div id="stats">
+							Name: <input id="gun_name" value="Custom Gun"><br>
+							Type: <input id="gun_type" size="8" value="AR"><br>
+							RPM: <input id="gun_rpm" size="8" value="600" min="1"><br>
+							Open Bolt Delay: <input id="gun_open_bolt_delay" size="8" value="0" min="0">ms<br>
+						</div>
+
+						<strong>Damage Profile</strong>
+						<div id="damage_profile">
+						</div>
+						<div>
+							<button class="btn btn-outline-secondary btn-sm" id="add_damage_range">Add A Damage Range</button>
+							<button class="btn btn-outline-secondary btn-sm" id="sort_damage_range">Sort Damage Ranges</button>
+						</div>
+
+						<strong>Attachments</strong>
+						<div id="attachments">
+						</div>
+						<div>
+							<button class="btn btn-outline-secondary btn-sm" id="save_changes"><strong>Save Changes And Return to TTK Page</strong></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-8">
+					<h4 style="color:red"><div id="warning"></div></h4>
+					<div id="ttk_for_various_distance"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<script language="javascript" src="scripts/pages/custom_gun.js"></script>
+
+		<script type="text/javascript">
+		</script>
+	</body>
+</html>

@@ -141,7 +141,7 @@ DEFAULT_OPTIONS = {
 
 SAVE_DATA = {
 	version: '0.1',
-	guns: [JSON.parse(JSON.stringify(DEFAULT_GUNS[DEFAULT_GUNS_INDEX['FFAR']]))],
+	guns: [JSON.parse(JSON.stringify(DEFAULT_GUNS[Math.floor(Math.random() * DEFAULT_GUNS.length)]))],
 	options: DEFAULT_OPTIONS
 }
 

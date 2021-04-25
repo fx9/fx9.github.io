@@ -40,7 +40,11 @@ function create_gun_div(gun){
 	if (gun.sprint_to_fire_time_ms) {
 		info_column.append($('<div>Sprint to fire time: '+gun.sprint_to_fire_time_ms+'ms</div>'));
 	}
-	
+
+    option_div = $('<div class="gun_damage_profile"></div>');
+	option_div.append(make_damage_div(gun.default_damage_profile));
+	info_column.append(option_div);
+
 	var advanced_options_id = next_collapse_id();
 	var collapse_button = $('<button class="btn btn-outline-secondary btn-sm my-2" data-toggle="collapse" data-target="#'+advanced_options_id+'">Advanced Options</button>');
 	info_column.append(collapse_button);
@@ -135,6 +139,15 @@ function create_gun_div(gun){
 	});
 	div.data('gun_data', JSON.stringify(gun));
     return div
+}
+
+function make_damage_div(damage_profile){
+    return $(
+		'<div style="tab-size:2">' +
+			'<strong>Default damage head/chest/stomach/ext:</strong><br>' +
+			damage_profile.map(x => x[0]+'m:&nbsp;&nbsp;'+x[1].join('/')).join('<br>') +
+		'</div>'
+	);
 }
 
 function gun_option_unique_class(option_name){

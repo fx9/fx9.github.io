@@ -230,16 +230,17 @@ function ttk_chart_highcharts_obj(title_text, x_axis_text, series_array){
 }
 
 function update_chart(){
-    var gun = compose_gun_obj();
+    var custom_gun = compose_gun_obj();
 
-    if (!damage_profile_check(gun.default_damage_profile)){
-        $('#warning').text("WARNING: Some numbers <= 0 in damage profile; chart is not updated.");
+    var error = damage_profile_check(custom_gun.default_damage_profile);
+    if (!(error === null)){
+        $('#warning').text('WARNING: ' + error + '. Chart is not updated.');
         return;
     } else {
         $('#warning').empty();
     }
 
-    var guns = [gun];
+    var guns = [custom_gun];
     var options = SAVE_DATA.options;
     var series_array = make_series_for_various_distance(options.total_hp, guns, get_array(0, 100, 1), options.default_headshot_percent, options.default_hit_percent);
     var chart_options = [options.default_headshot_percent + '% headshot'];
@@ -254,15 +255,18 @@ function update_chart(){
 }
 
 function damage_profile_check(damage_profile){
+    if (!damage_profile || damage_profile.length == 0){
+        return 'Damage profile is empty';
+    }
     for (var i = 0; i < damage_profile.length; i++){
         var damage = damage_profile[i][1];
         for (var j = 0; j < damage.length; j++){
             if (damage[j] <= 0){
-                return false;
+                return 'Some numbers <= 0 in damage profile';
             }
         }
     }
-    return true;
+    return null;
 }
 
 function load_custom_gun(){
@@ -283,8 +287,9 @@ function load_custom_gun(){
 $('#save_changes').click(function(){
     var custom_gun = compose_gun_obj();
 
-    if (!damage_profile_check(custom_gun.default_damage_profile)){
-        alert("WARNING: Some numbers <= 0 in damage profile; won't return to ttk page.");
+    var error = damage_profile_check(custom_gun.default_damage_profile);
+    if (!(error === null)){
+        alert("INVALID GUN: " + error + ". Won't return to ttk page.");
         return;
     }
 

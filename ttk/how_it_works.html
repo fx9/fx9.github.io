@@ -94,6 +94,10 @@
 						<div>
 							It calculates the expected value of a gun's TTK using DP algorithm. You can find the very short algorithm in <a href="scripts/algorithms/quick_ttk.js">quick_ttk.js</a>. As it takes hit ratio of every body parts into account, the TTK value will be different from what you see elsewhere.
 						</div>
+
+						<div>
+							<a id="return_to_ttk_page" href="ttk.html"><strong>Return to TTK Page</strong></a>
+						</div>
 					</div>
 				</div>
 				
@@ -105,6 +109,7 @@
 
 
 		<script type="text/javascript">
+
 			Highcharts.setOptions({
 				lang: {
 					thousandsSep: ""
@@ -179,7 +184,15 @@
 					series: series
 				});
 			}
-			make_headshot_to_parts_chart();
+
+			function init(){
+				var save_data_base64 = getUrlParameter('save_data');
+				if (save_data_base64){
+    				$('#discard_changes').attr('href', 'ttk.html?save_data=' + save_data_base64)
+				}
+				make_headshot_to_parts_chart();
+			}
+			init();
 		</script>
 	</body>
 </html>

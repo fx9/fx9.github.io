@@ -72,14 +72,12 @@
 					<div id="options">
 						<a href="how_it_works.html">How it works</a>
 						<h4>Options</h4>
-						<br>
-						<strong>Common</strong>
+						<strong style="line-height:40px">Common</strong>
 						<div>
 							Total HP:
 							<input type="number" class="update_chart" id="total_hp" size="3">
 						</div>
-						<br>
-						<strong>TTK by distance chart</strong>
+						<strong style="line-height:40px">TTK by distance chart</strong>
 						<div>
 							Default headshot accuracy:
 							<input type="number" class="update_chart" id="default_headshot_percent" min="0" max="100" size="3">%
@@ -88,8 +86,7 @@
 							Default hit accuracy:
 							<input type="number" class="update_chart" id="default_hit_percent" min="0" max="100" size="3">%
 						</div>
-						<br>
-						<strong>Average TTK for range by headshot percent chart</strong>
+						<strong style="line-height:40px">Average TTK for range by headshot percent chart</strong>
 						<div>
 							<div>
 								Headshot between
@@ -103,25 +100,13 @@
 							</div>
 						</div>
 					</div>
-					<div hidden>
-						<div>
-							<button class="btn btn-outline-primary btn-sm mt-1" id="refresh_chart">Update Charts</button>
-						</div>
-						<br>
-						<h4>Import / Export</h4>
-						<div class="row">
-							<div class="col-7">
-								<div class="mt-2">
-									<textarea class="form-control" id="gun_text" rows="2" style="resize: none" spellcheck="false"></textarea>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div>
+						<h4>Guns</h4>
+						<div>This page is shareable and your status is saved in URL. Save it to you bookmark and return at any time!</div>
 					</div>
 					<div class="input-group mt-3">
 						<select class="form-select" id="select_gun"></select>
-						<button class="btn btn-outline-secondary btn-sm" id="add_gun">Add Gun</button>
+						&nbsp;&nbsp;<button class="btn btn-outline-secondary btn-sm" id="add_gun">Add Gun</button>
 						&nbsp;&nbsp;&nbsp;<a id="custom_gun_link" href="custom_gun.html">Add a custom gun</a>
 					</div>
 					<br>

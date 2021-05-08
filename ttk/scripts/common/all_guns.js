@@ -1,4 +1,5 @@
 
+UPDATE_EPOCH = 1620514455;
 DEFAULT_GUNS = [
  {
   "name": "AK-47",
@@ -159,7 +160,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "AK-47 (CW)",
-    "att_name": "Agency Suppressor",
+    "att_name": "GRU Suppressor",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.1
@@ -169,7 +170,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "AK-47 (CW)",
-    "att_name": "SOF Target Designator",
+    "att_name": "KGB Target Designator",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.04
@@ -632,16 +633,13 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 55, 34, 34, 30 ]
+    [ 50, 32, 32, 28 ]
    ],
-   [ 13,
-    [ 40, 25, 25, 22 ]
+   [ 15,
+    [ 39, 24, 24, 21 ]
    ],
-   [ 19,
-    [ 32, 20, 20, 18 ]
-   ],
-   [ 26,
-    [ 32, 20, 20, 17 ]
+   [ 20,
+    [ 31, 20, 20, 18 ]
    ]
   ],
   "attachments": [
@@ -731,8 +729,8 @@ DEFAULT_GUNS = [
    [ 0,
     [ 56, 42, 35, 35 ]
    ],
-   [ 24,
-    [ 51, 38, 32, 32 ]
+   [ 25,
+    [ 49, 36, 31, 31 ]
    ]
   ],
   "attachments": [
@@ -911,10 +909,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 46, 31, 31, 31 ]
+    [ 40, 31, 31, 31 ]
    ],
    [ 27,
-    [ 39, 26, 26, 26 ]
+    [ 35, 26, 26, 26 ]
    ]
   ],
   "attachments": [
@@ -940,7 +938,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "FARA",
-    "att_name": "SOF Target Designator",
+    "att_name": "KGB Target Designator",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.04
@@ -2070,7 +2068,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "LC10",
-    "att_name": "KGB Target Designator",
+    "att_name": "SOF Target Designator",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.04
@@ -2350,7 +2348,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "M60",
-    "att_name": "Reinforced Heavy",
+    "att_name": "Division",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 0.86
@@ -2360,7 +2358,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "M60",
-    "att_name": "Ranger",
+    "att_name": "SOR Cut Down",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 0.71
@@ -2370,7 +2368,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "M60",
-    "att_name": "Takedown",
+    "att_name": "Match Grade",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.24
@@ -3273,12 +3271,12 @@ DEFAULT_GUNS = [
   "attachments_type": "PPSh",
   "type": "SMG",
   "rpm": 904,
-  "open_bolt_delay_ms": 54,
+  "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
     [ 35, 27, 27, 24 ]
    ],
-   [ 16,
+   [ 17,
     [ 31, 24, 24, 21 ]
    ]
   ],
@@ -3507,7 +3505,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "RPD",
-    "att_name": "SOF Target Designator",
+    "att_name": "KGB Target Designator",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.04
@@ -3517,7 +3515,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "RPD",
-    "att_name": "Reinforced Heavy",
+    "att_name": "Division",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 0.85
@@ -3527,7 +3525,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "RPD",
-    "att_name": "Ranger",
+    "att_name": "GRU Cut Down",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 0.7
@@ -3537,7 +3535,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "RPD",
-    "att_name": "Takedown",
+    "att_name": "Match Grade",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.23
@@ -3844,13 +3842,10 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": [
      [ 0,
-      [ 35, 35, 27, 27 ]
+      [ 31, 31, 23, 23 ]
      ],
      [ 11.8,
-      [ 29, 29, 23, 23 ]
-     ],
-     [ 22,
-      [ 28, 28, 23, 23 ]
+      [ 25, 25, 19, 19 ]
      ]
     ],
     "slot": "Barrel"

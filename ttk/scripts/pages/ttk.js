@@ -115,7 +115,7 @@ function init(){
 	if (window.innerWidth < 1200) {
 //	    $('#show_display_options').click();
 	    $('#stream_layout').append($('#warning_div'));
-	    $('#stream_layout').append($('#user_input'));
+	    $('#stream_layout').append($('#user_inputs'));
 	    $('#stream_layout').append($('#ttk_for_various_distance'));
 	    $('#stream_layout').append($('#ttk_for_various_headshot_percent'));
 	    $('#stream_layout').append($('#gun_vs_for_various_distance'));

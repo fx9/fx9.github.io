@@ -98,62 +98,62 @@
 			<div class="row">
 				<div id="column_0" class="col-3">
 					<div id="user_inputs">
-					<div id="options" class="options">
-						<a href="how_it_works.html">How it works</a>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="https://github.com/fx9/fx9.github.io/issues" target="_blank">Report bugs</a>
-						<h4>Options</h4>
-						<strong>Common</strong>
-						<div>
-							<span>Total HP:</span>
-							<input type="number" class="update_chart" id="total_hp" min="0" max="250" size="3">
-						</div>
-						<div>
-							<span>Default headshot accuracy:</span>
-							<input type="number" class="update_chart" id="default_headshot_percent" min="0" max="100" size="3">%
-						</div>
-						<div>
-							<span>Default hit accuracy:</span>
-							<input type="number" class="update_chart" id="default_hit_percent" min="0" max="100" size="3">%
-						</div>
-						<strong>When averaging on ...</strong>
-						<div>
-							<span>Distance:</span>
-							<input type="number" class="update_chart" id="min_distance" min="0" max="1000">m to
-							<input type="number" class="update_chart" id="max_distance" min="0" max="1000">m
-						</div>
-						<strong>Where X-axis is ... </strong>
-						<div>
-							<span>Headshot %:</span>
-							<input type="number" class="update_chart" id="min_headshot_percent" min="0" max="100">% to
-							<input type="number" class="update_chart" id="max_headshot_percent" min="0" max="100">%
-						</div>
-						<div hidden>
-							<span>Hit %:</span>
-							<input type="number" class="update_chart" id="min_hit_percent" min="0" max="100">% to
-							<input type="number" class="update_chart" id="max_hit_percent" min="0" max="100">%
-							<strong>Display Options</strong><button id="show_display_options" class="btn btn-outline-secondary btn-sm mx-2" data-toggle="collapse" data-target="#display_options">Show/Hide</button>
-							<div id="display_options" class="collapse">
-								some contents
+						<div id="options" class="options">
+							<a href="how_it_works.html">How it works</a>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="https://github.com/fx9/fx9.github.io/issues" target="_blank">Report bugs</a>
+							<h4>Options</h4>
+							<strong>Common</strong>
+							<div>
+								<span>Total HP:</span>
+								<input type="number" class="update_chart" id="total_hp" min="0" max="250" size="3">
+							</div>
+							<div>
+								<span>Default headshot accuracy:</span>
+								<input type="number" class="update_chart" id="default_headshot_percent" min="0" max="100" size="3">%
+							</div>
+							<div>
+								<span>Default hit accuracy:</span>
+								<input type="number" class="update_chart" id="default_hit_percent" min="0" max="100" size="3">%
+							</div>
+							<strong>When averaging on ...</strong>
+							<div>
+								<span>Distance:</span>
+								<input type="number" class="update_chart" id="min_distance" min="0" max="1000">m to
+								<input type="number" class="update_chart" id="max_distance" min="0" max="1000">m
+							</div>
+							<strong>Where X-axis is ... </strong>
+							<div>
+								<span>Headshot %:</span>
+								<input type="number" class="update_chart" id="min_headshot_percent" min="0" max="100">% to
+								<input type="number" class="update_chart" id="max_headshot_percent" min="0" max="100">%
+							</div>
+							<div hidden>
+								<span>Hit %:</span>
+								<input type="number" class="update_chart" id="min_hit_percent" min="0" max="100">% to
+								<input type="number" class="update_chart" id="max_hit_percent" min="0" max="100">%
+								<strong>Display Options</strong><button id="show_display_options" class="btn btn-outline-secondary btn-sm mx-2" data-toggle="collapse" data-target="#display_options">Show/Hide</button>
+								<div id="display_options" class="collapse">
+									some contents
 
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div>
-						<h4>Guns</h4>
-						<strong class="text-info">All stats updated on <span id="data_updated"></span></strong>
-						<div>This page is shareable and your status is saved in URL. Save it to you bookmark and return at any time!</div>
-					</div>
-					<div class="input-group mt-3">
-						<select class="form-select" id="select_gun"></select>
-						<button class="btn btn-outline-secondary btn-sm ml-2" id="prepend_gun">Add Gun to Top</button>
-						<button class="btn btn-outline-secondary btn-sm ml-2" id="add_gun">Add Gun to Bottom</button>
-						<div><a id="custom_gun_link" href="custom_gun.html">Add a custom gun</a></div>
-					</div>
-					<div><button class="btn btn-outline-secondary btn-sm my-2" data-toggle="collapse" data-target="#guns" >Show/Hide Guns</button></div>
-					<div id="guns" class="collapse.show"></div>
-					<div><button class="btn btn-outline-secondary btn-sm" onclick="$('html, body').animate({scrollTop:0}, 200);">Back to Top</button></div>
+						<div>
+							<h4>Guns</h4>
+							<strong class="text-info">All stats updated on <span id="data_updated"></span></strong>
+							<div>This page is shareable and your status is saved in URL. Save it to you bookmark and return at any time!</div>
+						</div>
+						<div class="input-group mt-3">
+							<select class="form-select" id="select_gun"></select>
+							<button class="btn btn-outline-secondary btn-sm ml-2" id="prepend_gun">Add Gun to Top</button>
+							<button class="btn btn-outline-secondary btn-sm ml-2" id="add_gun">Add Gun to Bottom</button>
+							<div><a id="custom_gun_link" href="custom_gun.html">Add a custom gun</a></div>
+						</div>
+						<div><button class="btn btn-outline-secondary btn-sm my-2" data-toggle="collapse" data-target="#guns" >Show/Hide Guns</button></div>
+						<div id="guns" class="collapse.show"></div>
+						<div><button class="btn btn-outline-secondary btn-sm" onclick="$('html, body').animate({scrollTop:0}, 200);">Back to Top</button></div>
 					</div>
 				</div>
 				

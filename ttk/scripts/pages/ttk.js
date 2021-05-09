@@ -109,10 +109,7 @@ function update_chart(){
     update_gun_vs_charts(guns, options);
 }
 
-function init(){
-    // initialize page elements
-
-	if (window.innerWidth < 1200) {
+function adapt_small_screen(){
 //	    $('#show_display_options').click();
 	    $('#stream_layout').append($('#warning_div'));
 	    $('#stream_layout').append($('#user_inputs'));
@@ -120,7 +117,17 @@ function init(){
 	    $('#stream_layout').append($('#ttk_for_various_headshot_percent'));
 	    $('#stream_layout').append($('#gun_vs_for_various_distance'));
 	    $('#stream_layout').append($('#gun_vs_average_on_distance'));
+	    $('#im_on_mobile_div').attr('hidden','hidden');
+}
+
+$('#im_on_mobile').click(adapt_small_screen);
+
+function init(){
+    // initialize page elements
+	if (window.innerWidth < 1200) {
+	    adapt_small_screen();
 	}
+
 
     $('#data_updated').text(new Date(UPDATE_EPOCH*1000).toISOString().split('T')[0])
 

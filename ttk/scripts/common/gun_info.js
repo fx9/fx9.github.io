@@ -97,6 +97,14 @@ function get_hit_ratio(gun, default_hit_ratio){
 	}
 }
 
+function get_extra_time_ms(gun){
+    var extra_time_ms = gun.open_bolt_delay_ms;
+    if (gun.ttk_adjustment_ms_enabled){
+        extra_time_ms += get_gun_option(gun, 'ttk_adjustment_ms');
+    }
+    return extra_time_ms;
+}
+
 function GunInfo(gun, default_headshot_ratio, default_hit_ratio){
     this.distance_ttk_name = get_info_name(gun);
     this.headshot_ttk_name = get_info_name(gun, true);
@@ -105,7 +113,7 @@ function GunInfo(gun, default_headshot_ratio, default_hit_ratio){
     this.rpm = get_rpm(gun,  this.atts);
     this.parts_ratios = get_parts_ratios(gun, default_headshot_ratio);
     this.hit_ratio = get_hit_ratio(gun, default_hit_ratio);
-    this.extra_time_ms = gun.open_bolt_delay_ms + get_gun_option(gun, 'ttk_adjustment_ms');
+    this.extra_time_ms = get_extra_time_ms(gun);
     this.get_damage = function (distance){
         var damage = this.damage_profile[0][1];
         for (var i = 1; i < this.damage_profile.length; i++){
@@ -126,4 +134,8 @@ function GunInfo(gun, default_headshot_ratio, default_hit_ratio){
             extra_time_ms: ((extra_time_ms == null) ? this.extra_time_ms : extra_time_ms)
         };
     }
+}
+
+function stringify_ttk_info(ttk_info){
+    return JSON.stringify([ttk_info.total_hp, ttk_info.damage, ttk_info.parts_ratios, ttk_info.rpm, ttk_info.hit_ratio, ttk_info.extra_time_ms]);
 }

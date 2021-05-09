@@ -30,9 +30,10 @@
 		<script language="javascript" src="scripts/common/all_guns.js"></script>
 		<script language="javascript" src="scripts/common/gun_info.js"></script>
 		<script language="javascript" src="scripts/common/lz-string.js"></script>
-		<script language="javascript" src="scripts/common/make_series.js"></script>
 		<script language="javascript" src="scripts/common/save_data_processing.js"></script>
 		<script language="javascript" src="scripts/pages/ttk_add_gun.js"></script>
+		<script language="javascript" src="scripts/pages/ttk_line_charts.js"></script>
+		<script language="javascript" src="scripts/pages/ttk_gun_vs_charts.js"></script>
 
 		<title>Real TTK</title>
 
@@ -73,45 +74,68 @@
 			label {
 				margin: 0
 			}
+
+			.badge-primary {
+				background: #2398f7
+			}
+			.badge-secondary {
+				background: #f78223
+			}
+
+			.options span {
+				line-height:40px
+			}
+
+			.options strong {
+				line-height:40px
+			}
+
+
 		</style>
 	</head>
 	<body>
 		<div class="container-fluid px-5 pt-3">
 			<div class="row">
-				<div class="col-4">
-					<div id="options">
+				<div class="col-3">
+					<div id="options" class="options">
 						<a href="how_it_works.html">How it works</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="https://github.com/fx9/fx9.github.io/issues" target="_blank">Report bugs</a>
 						<h4>Options</h4>
-						<strong style="line-height:40px">Common</strong>
+						<strong>Common</strong>
 						<div>
-							Total HP:
-							<input type="number" class="update_chart" id="total_hp" size="3">
+							<span>Total HP:</span>
+							<input type="number" class="update_chart" id="total_hp" min="0" max="250" size="3">
 						</div>
-						<strong style="line-height:40px">TTK by distance chart</strong>
 						<div>
-							Default headshot accuracy:
+							<span>Default headshot accuracy:</span>
 							<input type="number" class="update_chart" id="default_headshot_percent" min="0" max="100" size="3">%
 						</div>
 						<div>
-							Default hit accuracy:
+							<span>Default hit accuracy:</span>
 							<input type="number" class="update_chart" id="default_hit_percent" min="0" max="100" size="3">%
 						</div>
-						<strong style="line-height:40px">Average TTK for range by headshot percent chart</strong>
+						<strong>When averaging on ...</strong>
 						<div>
-							<div>
-								Headshot between
-								<input type="number" class="update_chart" id="min_headshot_percent" min="0" max="100">% and 
-								<input type="number" class="update_chart" id="max_headshot_percent" min="0" max="100">%
-							</div>
-							<div>
-								Distance between
-								<input type="number" class="update_chart" id="min_distance" min="0" max="1000">m and 
-								<input type="number" class="update_chart" id="max_distance" min="0" max="1000">m
-							</div>
+							<span>Distance:</span>
+							<input type="number" class="update_chart" id="min_distance" min="0" max="1000">m to
+							<input type="number" class="update_chart" id="max_distance" min="0" max="1000">m
+						</div>
+						<strong>Where X-axis is ... </strong>
+						<div>
+							<span>Headshot %:</span>
+							<input type="number" class="update_chart" id="min_headshot_percent" min="0" max="100">% to
+							<input type="number" class="update_chart" id="max_headshot_percent" min="0" max="100">%
+						</div>
+						<div hidden>
+							<span>Hit %:</span>
+							<input type="number" class="update_chart" id="min_hit_percent" min="0" max="100">% to
+							<input type="number" class="update_chart" id="max_hit_percent" min="0" max="100">%
 						</div>
 					</div>
 					<div>
 						<h4>Guns</h4>
+						<strong class="text-info">All stats updated on <span id="data_updated"></span></strong>
 						<div>This page is shareable and your status is saved in URL. Save it to you bookmark and return at any time!</div>
 					</div>
 					<div class="input-group mt-3">
@@ -123,209 +147,18 @@
 					<div id="guns"></div>
 				</div>
 				
-				<div class="col-8">
+				<div class="col-6">
 					<h4 style="color:red"><div id="warning"></div></h4>
 					<div id="ttk_for_various_distance"></div>
+					<div id="gun_vs_for_various_distance"><strong class="text-info">Set Gun A and Gun B in your guns to show the result of a fight between them!</strong></div>
+				</div>
+				<div class="col-3">
 					<div id="ttk_for_various_headshot_percent"></div>
+					<div id="gun_vs_average_on_distance"></div>
 				</div>
 			</div>
 		</div>
 
-
-		<script type="text/javascript">
-			Highcharts.setOptions({
-				lang: {
-					thousandsSep: ""
-				}
-			});
-			// options operations
-			function get_options(){
-				var options = {};
-				for (var key in DEFAULT_OPTIONS){
-					options[key] = Number($('#'+key).val());
-				}
-				return options;
-			}
-
-			function set_options(options){
-				for (var key in options){
-					$('#'+key).val(options[key]);
-				}
-			}
-			
-			$('#options').find('input').change(function(){
-				update_page();
-			});
-
-			// gun selection and list operations
-			function create_gun_selection(){
-				var select_gun = $('#select_gun');
-				for (var i = 0; i < DEFAULT_GUNS.length; i++) {
-					var el = document.createElement('option');
-					el.text = DEFAULT_GUNS[i].name;
-					el.value = JSON.stringify(DEFAULT_GUNS[i]);
-					select_gun.append(el);
-				}
-			}
-			
-			function add_gun_obj(gun_obj){
-				var gun_div=create_gun_div(gun_obj);
-				gun_div.find('.remove_gun').click(function(){
-					$(this).closest('.gun').remove();
-				});
-				$('#guns').append(gun_div);
-			}
-
-			$('#add_gun').click(function(){
-				var selected=$('#select_gun option:selected');
-				if(selected.length == 0){
-					return;
-				}
-				var gun_json=selected.eq(0).val();
-				var gun = JSON.parse(gun_json);
-				add_gun_obj(gun);
-				update_page();
-			});
-			
-			function get_current_guns(){
-				var guns=[];
-				$('.gun').each(function(){
-					guns.push(get_gun_obj($(this)));
-				});
-				return guns;
-			}
-
-			// page operations
-			function compose_save_data(){
-				return {
-					version: '0.1',
-					guns: get_current_guns().map(persistent_gun),
-					options: get_options()
-				};
-			}
-			
-			function ttk_chart_highcharts_obj(title_text, x_axis_text, series_array){				
-				return {
-					plotOptions: {
-						series: {
-							animation: false,
-							marker: {
-								enabled: false,
-							},
-						}
-					},
-					title: {
-						text: title_text
-					},
-					tooltip: {
-						shared: true,
-					},
-					yAxis: {
-						title: {
-							text: 'ms'
-						}
-					},
-					xAxis: {
-						title: {
-							text: x_axis_text
-						},
-						crosshair: true
-					},
-					legend: {
-						layout: 'horizontal',
-						align: 'center',
-						verticalAlign: 'top',
-					},
-					series: series_array,
-				};
-			}
-
-			function get_array(min_val, max_val, step){
-				var array=[];
-				for (var val = Math.floor(min_val/step); val <= Math.ceil(max_val/step); val+=step){
-					array.push(val);
-				}
-				return array;
-			}
-
-			function get_save_data_str(){
-				var save_data = compose_save_data();
-				return LZString.compressToEncodedURIComponent(JSON.stringify(save_data));
-			}
-
-			function update_page(alert_msg=''){
-				var save_data_str = get_save_data_str();
-				var newurl = window.location.origin + window.location.pathname + '?save_data=' + save_data_str;
-				window.history.replaceState({ path: newurl }, '', newurl);
-
-
-				var custom_gun_url = 'custom_gun.html?save_data=' + save_data_str;
-				$('#custom_gun_link').attr('href', custom_gun_url);
-
-
-				if (alert_msg) {
-					alert('refreshed '+msg);
-				}
-				setTimeout(update_chart, 0);
-			}
-			
-			function update_chart(){
-				var guns = get_current_guns();
-				var options = get_options();
-				var series_array = make_series_for_various_distance(options.total_hp, guns, get_array(0, 100, 1), options.default_headshot_percent, options.default_hit_percent);
-				var chart_options = [options.default_headshot_percent + '% headshot'];
-				
-				if (options.default_hit_percent != 100) {
-					chart_options.push(options.default_hit_percent + '% hit');
-				}
-				
-				var chart_options_in_title = chart_options.join('; ');
-				var chart_obj = ttk_chart_highcharts_obj('TTK (' + chart_options_in_title+ ') by distance', 'distance (m)', series_array)
-				Highcharts.chart('ttk_for_various_distance', chart_obj);
-				var d_array = get_array(options.min_distance, options.max_distance, 1);
-				var hs_p_array = get_array(options.min_headshot_percent, options.max_headshot_percent, 1);
-				series_array = make_series_for_various_headshot_percent(options.total_hp, guns, d_array, hs_p_array, options.default_hit_percent);
-				chart_obj = ttk_chart_highcharts_obj(''+d_array[0]+'-'+d_array[d_array.length-1]+'m average TTK by headshot ('+hs_p_array[0]+'% - '+hs_p_array[hs_p_array.length-1]+'%)', 'headshot percent', series_array)
-				Highcharts.chart('ttk_for_various_headshot_percent', chart_obj);
-			}
-
-			function init(){
-				// initialize page elements
-				create_gun_selection();
-				$('#select_gun').change();
-				
-				// load and apply save data
-				load_saved_data();
-				set_options(SAVE_DATA.options);
-				for(var i=0;i<SAVE_DATA.guns.length;i++){
-					add_gun_obj(recover_gun(SAVE_DATA.guns[i]));
-				}
-				
-				update_page();
-			}
-			init();
-			
-			// util functions
-			function copy_text(selector){
-			  var $input = $(selector);
-			  var el = $input.get(0);
-			  var editable = el.contentEditable;
-			  var readOnly = el.readOnly;
-			  el.contentEditable = true;
-			  el.readOnly = false;
-			  var range = document.createRange();
-			  range.selectNodeContents(el);
-			  var sel = window.getSelection();
-			  sel.removeAllRanges();
-			  sel.addRange(range);
-			  el.setSelectionRange(0, 999999);
-			  el.contentEditable = editable;
-			  el.readOnly = readOnly;
-			  document.execCommand('copy');
-			  $input.select();
-			  document.execCommand('copy');
-			  $input.blur();
-			}
-		</script>
+		<script language="javascript" src="scripts/pages/ttk.js"></script>
 	</body>
 </html>

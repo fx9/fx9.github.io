@@ -39,6 +39,16 @@ GUN_OPTIONS = {
    "ttk_adjustment_ms":{
       "index":9,
       "default_value":0
+   },
+   "is_gun_for_vs_a":{
+      "index":10,
+      "default_value":false,
+      "not_advanced_option":true
+   },
+   "is_gun_for_vs_b":{
+      "index":11,
+      "default_value":false,
+      "not_advanced_option":true
    }
 }
 
@@ -70,6 +80,9 @@ function set_gun_option(gun, option_name, option_value){
 
 function has_advanced_options(gun){
 	for (var option_name in GUN_OPTIONS){
+	    if(GUN_OPTIONS[option_name].not_advanced_option){
+	        continue;
+	    }
 		if (JSON.stringify(get_gun_option(gun, option_name)) != JSON.stringify(GUN_OPTIONS[option_name].default_value)){
 			return true;
 		}

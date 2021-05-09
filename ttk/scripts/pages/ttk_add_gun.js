@@ -27,27 +27,64 @@ function create_gun_div(gun){
 	var tooltip = '';
 	var gun_info = $('<div class="row"></div>');
 	var info_column = $('<div class="col gun_options"></div>');
-    info_column.append($('<strong>'+gun.name+'</strong>'));
-	info_column.append($('<span class="badge badge-primary mx-2">'+gun.type+'</span>'));
+    var title_div = $('<div class="gun_title"></div>');
+
+    title_div.append($('<strong>'+gun.name+'</strong>'));
+	title_div.append($('<span class="badge badge-dark mx-1">'+gun.type+'</span>'));
+
+	function add_gun_for_vs_a(){
+        var gun_for_vs_a = $('<span class="badge badge-primary mx-1 gun_for_vs_a">Gun A</span>');
+//        gun_for_vs_a.data('option_name','is_gun_for_vs_a');
+	    title_div.append(gun_for_vs_a);
+	}
+	function add_gun_for_vs_b(){
+        var gun_for_vs_b = $('<span class="badge badge-secondary mx-1 gun_for_vs_b">Gun B</span>');
+//        gun_for_vs_b.data('option_name','is_gun_for_vs_b');
+	    title_div.append(gun_for_vs_b);
+	}
+	if (get_gun_option(gun, 'is_gun_for_vs_a')){
+	    add_gun_for_vs_a();
+	}
+	if (get_gun_option(gun, 'is_gun_for_vs_b')){
+	    add_gun_for_vs_b();
+	}
+
+	info_column.append(title_div);
 	info_column.append($('<div>Display name: <input class="gun_display_name" size="8" value="'+gun.display_name+'"></div>'));
     info_column.append($('<div>Original RPM: '+gun.rpm+'</div>'));
 	
 	tooltip = 'Included in TTK. Can be neutralized by ttk adjustment in options.';
-	option_div = $('<div>Open bolt delay<strong data-toggle="tooltip" data-placement="top" title="'+tooltip+'">&#9432;</strong>: '+get_gun_option(gun, 'open_bolt_delay_ms')+'ms</div>');
-	option_div.find('[data-toggle="tooltip"]').tooltip();
-    info_column.append(option_div);
+	var obd_div = $('<div>Open bolt delay<strong data-toggle="tooltip" data-placement="top" title="'+tooltip+'">&#9432;</strong>: '+get_gun_option(gun, 'open_bolt_delay_ms')+'ms</div>');
+	obd_div.find('[data-toggle="tooltip"]').tooltip();
+    info_column.append(obd_div);
 	
 	if (gun.sprint_to_fire_time_ms) {
 		info_column.append($('<div>Sprint to fire time: '+gun.sprint_to_fire_time_ms+'ms</div>'));
 	}
 
-    option_div = $('<div class="gun_damage_profile"></div>');
-	option_div.append(make_damage_div(gun.default_damage_profile));
-	info_column.append(option_div);
+    var damage_profile_div = $('<div class="gun_damage_profile"></div>');
+	damage_profile_div.append(make_damage_div(gun.default_damage_profile));
+	info_column.append(damage_profile_div);
+
+	var set_gun_for_vs_a_button = $('<button class="btn btn-outline-secondary btn-sm my-1 mr-1">Set as Gun A</button>');
+	set_gun_for_vs_a_button.click(function(){
+	    $('.gun_for_vs_a').remove();
+	    add_gun_for_vs_a();
+		update_page();
+	});
+	info_column.append(set_gun_for_vs_a_button);
+
+	var set_gun_for_vs_b_button = $('<button class="btn btn-outline-secondary btn-sm my-1 mx-1">Set as Gun B</button>');
+	set_gun_for_vs_b_button.click(function(){
+	    $('.gun_for_vs_b').remove();
+	    add_gun_for_vs_b();
+		update_page();
+	});
+	info_column.append(set_gun_for_vs_b_button);
 
 	var advanced_options_id = next_collapse_id();
-	var collapse_button = $('<button class="btn btn-outline-secondary btn-sm my-2" data-toggle="collapse" data-target="#'+advanced_options_id+'">Advanced Options</button>');
-	info_column.append(collapse_button);
+	var collapse_button_div = $('<div><button class="btn btn-outline-secondary btn-sm my-1" data-toggle="collapse" data-target="#'+advanced_options_id+'">Advanced Options</button><div>');
+	info_column.append(collapse_button_div);
 	gun_info.append(info_column);
 	
     var attachments = $('<div class="col gun_attachments"><strong>Attachments</strong></div>');
@@ -94,7 +131,7 @@ function create_gun_div(gun){
 	
 	
 	// Head/chest/stomach/ext accuracy: 
-	option_div = make_option_div(gun, 'custom_parts_percents_enabled', 'Head/chest/stomach/ext accuracy: ', null, 
+	option_div = make_option_div(gun, 'custom_parts_percents_enabled', 'Head/chest/stomach/ext accuracy', null,
 		'<br>' +
 		get_gun_option(gun, 'custom_parts_percents').map(x => '<input type="number" class="'+gun_option_unique_class('custom_parts_percents')+' mb-2" value="'+x+'" min="0" max="100" size="3">').join('/')+
 		'%'
@@ -119,7 +156,7 @@ function create_gun_div(gun){
 	// Range mod
 	tooltip = 'A custom percentage that overwrites range mods on attachments.';
 	option_div = make_option_div(gun, 'range_percent_enabled', 'Range mod', tooltip, 
-		'<input type="number" class="gun_number_input" value="'+get_gun_option(gun, 'range_percent')+'" min="0" size="3">%'
+		'<input type="number" class="gun_number_input" value="'+get_gun_option(gun, 'range_percent')+'" min="0" max="1000" size="3">%'
 	)
 	option_div.find('.gun_number_input').data('option_name','range_percent');
 	advanced_options_div.append(option_div);
@@ -127,7 +164,7 @@ function create_gun_div(gun){
 	// TTK adjustment
 	tooltip = 'Time to add on TTK calculated for this gun. Can be used for ADS time, sprint to shot time, etc. Can be negative if needed.';	
 	option_div = make_option_div(gun, 'ttk_adjustment_ms_enabled', 'TTK adjustment', tooltip, 
-		'<input type="number" class="gun_number_input" value="'+get_gun_option(gun, 'ttk_adjustment_ms')+'" size="3">ms'
+		'<input type="number" class="gun_number_input" value="'+get_gun_option(gun, 'ttk_adjustment_ms')+'" min="-9999" max="9999" size="3">ms'
 	)
 	option_div.find('.gun_number_input').data('option_name','ttk_adjustment_ms');
 	advanced_options_div.append(option_div);
@@ -204,6 +241,9 @@ function get_gun_obj(gun_div){
 	$(gun_div).find('.gun_number_input').each(function(){
 		gun[$(this).data('option_name')] = Number($(this).val());
 	});
+
+    gun.is_gun_for_vs_a = ($(gun_div).find('.gun_for_vs_a').length > 0);
+    gun.is_gun_for_vs_b = ($(gun_div).find('.gun_for_vs_b').length > 0);
 
 	var option_value = [];
 	var sum_option_value = 0;

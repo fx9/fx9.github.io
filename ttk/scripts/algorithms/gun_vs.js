@@ -9,10 +9,12 @@ function ttk_info_vs(ttk_info1, ttk_info2, max_time_ms){
     var max_shots1 = Math.floor(((max_time_ms - ttk_info1.extra_time_ms) / ttk_info1.interval_ms) + 1);
     var one_shot_dd1 = one_shot_damage_distribution(ttk_info1.damage, ttk_info1.parts_ratios, ttk_info1.hit_ratio);
     var ddbs1 = damage_distribution_by_shots(ttk_info1.total_hp, one_shot_dd1, max_shots1);
+    max_shots1 = max_shots1 < (ddbs1.length - 1) ? max_shots1 : (ddbs1.length - 1);
 
     var max_shots2 = Math.floor(((max_time_ms - ttk_info2.extra_time_ms) / ttk_info2.interval_ms) + 1);
     var one_shot_dd2 = one_shot_damage_distribution(ttk_info2.damage, ttk_info2.parts_ratios, ttk_info2.hit_ratio);
     var ddbs2 = damage_distribution_by_shots(ttk_info2.total_hp, one_shot_dd2, max_shots2);
+    max_shots2 = max_shots2 < (ddbs2.length - 1) ? max_shots2 : (ddbs2.length - 1);
 
     var shots1 = 1;
     var shots2 = 1;
@@ -34,7 +36,7 @@ function ttk_info_vs(ttk_info1, ttk_info2, max_time_ms){
     var shots1_inc=null;
     var shots2_inc=null;
     var kc_sum = 0;
-    while (shots1 <= max_shots1 || shots2 <= max_shots2){
+    while (shots1 <= max_shots1 && shots2 <= max_shots2){
         time1 = (shots1 - 1) * ttk_info1.interval_ms + ttk_info1.extra_time_ms;
         time2 = (shots2 - 1) * ttk_info2.interval_ms + ttk_info2.extra_time_ms;
         this_shot_kc1 = 0;
@@ -90,10 +92,22 @@ function ttk_info_vs(ttk_info1, ttk_info2, max_time_ms){
     return result;
 }
 
-function gun_vs(total_hp, gun_info1, gun_info2, distance, max_time_ms){
+function gun_vs(total_hp, gun_info1, gun_info2, distance, max_time_ms, cache=null){
     var ttk_info1 = gun_info1.get_ttk_info(total_hp, distance);
     var ttk_info2 = gun_info2.get_ttk_info(total_hp, distance);
-    return ttk_info_vs(ttk_info1, ttk_info2, max_time_ms);
+
+    var key = stringify_ttk_info(ttk_info1) + stringify_ttk_info(ttk_info2);
+    if (cache && key in cache){
+        return cache[key];
+    }
+
+    var result = ttk_info_vs(ttk_info1, ttk_info2, max_time_ms);
+
+    if (cache){
+        cache[key] = result;
+    }
+
+    return result;
 }
 
 function reduce_result(total_hp, gun_vs_result, hp_stages=[0, 100, 150, 200, 250]){
@@ -123,7 +137,7 @@ function reduce_result(total_hp, gun_vs_result, hp_stages=[0, 100, 150, 200, 250
         damage = Number(key);
         for (var i = 1; i < hp_stages.length; i++){
             if (total_hp - damage <= hp_stages[i]){
-                result.win2_hp[hp_stages[i]] += gun_vs_result.win1[key];
+                result.win2_hp[hp_stages[i]] += gun_vs_result.win2[key];
                 break
             }
         }

@@ -172,14 +172,6 @@ function compose_gun_obj(){
     };
 }
 
-function get_array(min_val, max_val, step){
-    var array=[];
-    for (var val = Math.floor(min_val/step); val <= Math.ceil(max_val/step); val+=step){
-        array.push(val);
-    }
-    return array;
-}
-
 function lz_string(obj){
     return LZString.compressToEncodedURIComponent(JSON.stringify(obj));
 }
@@ -190,43 +182,6 @@ function update_page(){
     var newurl = window.location.origin + window.location.pathname + '?custom_gun=' + custom_gun_str + '&save_data=' + save_data_str;
     window.history.replaceState({ path: newurl }, '', newurl);
     setTimeout(update_chart, 0);
-}
-
-
-function ttk_chart_highcharts_obj(title_text, x_axis_text, series_array){
-    return {
-        plotOptions: {
-            series: {
-                animation: false,
-                marker: {
-                    enabled: false,
-                },
-            }
-        },
-        title: {
-            text: title_text
-        },
-        tooltip: {
-            shared: true,
-        },
-        yAxis: {
-            title: {
-                text: 'ms'
-            }
-        },
-        xAxis: {
-            title: {
-                text: x_axis_text
-            },
-            crosshair: true
-        },
-        legend: {
-            layout: 'horizontal',
-            align: 'center',
-            verticalAlign: 'top',
-        },
-        series: series_array,
-    };
 }
 
 function update_chart(){
@@ -242,16 +197,7 @@ function update_chart(){
 
     var guns = [custom_gun];
     var options = SAVE_DATA.options;
-    var series_array = make_series_for_various_distance(options.total_hp, guns, get_array(0, 100, 1), options.default_headshot_percent, options.default_hit_percent);
-    var chart_options = [options.default_headshot_percent + '% headshot'];
-
-    if (options.default_hit_percent != 100) {
-        chart_options.push(options.default_hit_percent + '% hit');
-    }
-
-    var chart_options_in_title = chart_options.join('; ');
-    var chart_obj = ttk_chart_highcharts_obj('TTK (' + chart_options_in_title+ ') by distance', 'distance (m)', series_array)
-    Highcharts.chart('ttk_for_various_distance', chart_obj);
+    update_ttk_for_various_distance(guns, options);
 }
 
 function damage_profile_check(damage_profile){

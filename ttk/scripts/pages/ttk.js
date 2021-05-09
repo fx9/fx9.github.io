@@ -33,23 +33,36 @@ function create_gun_selection(){
     }
 }
 
-function add_gun_obj(gun_obj){
+function add_gun_obj(gun_obj, is_append=true){
     var gun_div=create_gun_div(gun_obj);
     gun_div.find('.remove_gun').click(function(){
         $(this).closest('.gun').remove();
     });
-    $('#guns').append(gun_div);
+    if (is_append) {
+        $('#guns').append(gun_div);
+    } else {
+        $('#guns').prepend(gun_div);
+    }
+    $('#guns').collapse('show');
 }
 
-$('#add_gun').click(function(){
+function add_selected_gun(is_append){
     var selected=$('#select_gun option:selected');
     if(selected.length == 0){
         return;
     }
     var gun_json=selected.eq(0).val();
     var gun = JSON.parse(gun_json);
-    add_gun_obj(gun);
+    add_gun_obj(gun, is_append);
     update_page();
+}
+
+$('#add_gun').click(function(){
+    add_selected_gun(true);
+});
+
+$('#prepend_gun').click(function(){
+    add_selected_gun(false);
 });
 
 function get_current_guns(){
@@ -98,6 +111,17 @@ function update_chart(){
 
 function init(){
     // initialize page elements
+
+	if (window.innerWidth < 1200) {
+//	    $('#show_display_options').click();
+	    $('#stream_layout').append($('#warning_div'));
+	    $('#stream_layout').append($('#user_input'));
+	    $('#stream_layout').append($('#ttk_for_various_distance'));
+	    $('#stream_layout').append($('#ttk_for_various_headshot_percent'));
+	    $('#stream_layout').append($('#gun_vs_for_various_distance'));
+	    $('#stream_layout').append($('#gun_vs_average_on_distance'));
+	}
+
     $('#data_updated').text(new Date(UPDATE_EPOCH*1000).toISOString().split('T')[0])
 
     create_gun_selection();

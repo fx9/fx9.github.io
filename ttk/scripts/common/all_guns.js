@@ -366,7 +366,58 @@ DEFAULT_GUNS = [
     [ 38, 28, 26, 24 ]
    ]
   ],
-  "attachments": [],
+  "attachments": [
+   {
+    "gun_name": "AN-94 (No HB)",
+    "att_name": "Lightweight Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "AN-94 (No HB)",
+    "att_name": "Monolithic Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "AN-94 (No HB)",
+    "att_name": "AN-94 Factory 330mm",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "AN-94 (No HB)",
+    "att_name": "AN-94 Factory X-438mm",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.34
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "AN-94 (No HB)",
+    "att_name": "VLK AN-94 Sila",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.19
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   }
+  ],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []
@@ -3280,7 +3331,78 @@ DEFAULT_GUNS = [
     [ 31, 24, 24, 21 ]
    ]
   ],
-  "attachments": [],
+  "attachments": [
+   {
+    "gun_name": "PPSh",
+    "att_name": "Sound Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "PPSh",
+    "att_name": "Agency Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "PPSh",
+    "att_name": "Reinforced Heavy",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.06
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "PPSh",
+    "att_name": "Rifled",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.06
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "PPSh",
+    "att_name": "Task Force",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.13
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "PPSh",
+    "att_name": "KGB Target Designator",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.04
+    },
+    "alt_damage_profile": null,
+    "slot": "Laser"
+   },
+   {
+    "gun_name": "PPSh",
+    "att_name": "Ember Sighting Point",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.08
+    },
+    "alt_damage_profile": null,
+    "slot": "Laser"
+   }
+  ],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []

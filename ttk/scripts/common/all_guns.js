@@ -778,10 +778,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 56, 42, 35, 35 ]
+    [ 52, 42, 35, 35 ]
    ],
    [ 25,
-    [ 49, 36, 31, 31 ]
+    [ 46, 36, 31, 31 ]
    ]
   ],
   "attachments": [

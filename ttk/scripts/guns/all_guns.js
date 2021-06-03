@@ -1,5 +1,5 @@
 
-UPDATE_EPOCH = 1622762376;
+UPDATE_EPOCH = 1622762734;
 DEFAULT_GUNS = [
  {
   "name": ".357",
@@ -2825,6 +2825,16 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": null,
     "slot": "Muzzle"
+   },
+   {
+    "gun_name": "LW3",
+    "att_name": "Sound Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
    }
   ],
   "is_custom": false,
@@ -3235,6 +3245,16 @@ DEFAULT_GUNS = [
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "M82",
+    "att_name": "Sound Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
     },
     "alt_damage_profile": null,
     "slot": "Muzzle"
@@ -4333,6 +4353,16 @@ DEFAULT_GUNS = [
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "Pelington",
+    "att_name": "Sound Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
     },
     "alt_damage_profile": null,
     "slot": "Muzzle"
@@ -5593,6 +5623,16 @@ DEFAULT_GUNS = [
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "ZRG",
+    "att_name": "Sound Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
     },
     "alt_damage_profile": null,
     "slot": "Muzzle"

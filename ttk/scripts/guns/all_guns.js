@@ -1,6 +1,68 @@
 
-UPDATE_EPOCH = 1620514455;
+UPDATE_EPOCH = 1622762376;
 DEFAULT_GUNS = [
+ {
+  "name": ".357",
+  "display_name": ".357",
+  "attachments_type": ".357",
+  "type": "Pistols",
+  "rpm": 116,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 113, 77, 73, 70 ]
+   ],
+   [ 26,
+    [ 77, 52, 50, 48 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": ".357",
+    "att_name": "Akimbo",
+    "modifiers": {
+     "rpm_mod": 2.0,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Perk"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": ".50 GS",
+  "display_name": ".50 GS",
+  "attachments_type": ".50 GS",
+  "type": "Pistols",
+  "rpm": 160,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 113, 77, 77, 70 ]
+   ],
+   [ 16.7,
+    [ 79, 53, 53, 49 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": ".50 GS",
+    "att_name": "Akimbo",
+    "modifiers": {
+     "rpm_mod": 2.0,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Perk"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
  {
   "name": "AK-47",
   "display_name": "AK-47",
@@ -366,58 +428,7 @@ DEFAULT_GUNS = [
     [ 38, 28, 26, 24 ]
    ]
   ],
-  "attachments": [
-   {
-    "gun_name": "AN-94 (No HB)",
-    "att_name": "Lightweight Suppressor",
-    "modifiers": {
-     "rpm_mod": 1,
-     "range_mod": 0.8
-    },
-    "alt_damage_profile": null,
-    "slot": "Muzzle"
-   },
-   {
-    "gun_name": "AN-94 (No HB)",
-    "att_name": "Monolithic Suppressor",
-    "modifiers": {
-     "rpm_mod": 1,
-     "range_mod": 1.1
-    },
-    "alt_damage_profile": null,
-    "slot": "Muzzle"
-   },
-   {
-    "gun_name": "AN-94 (No HB)",
-    "att_name": "AN-94 Factory 330mm",
-    "modifiers": {
-     "rpm_mod": 1,
-     "range_mod": 0.85
-    },
-    "alt_damage_profile": null,
-    "slot": "Barrel"
-   },
-   {
-    "gun_name": "AN-94 (No HB)",
-    "att_name": "AN-94 Factory X-438mm",
-    "modifiers": {
-     "rpm_mod": 1,
-     "range_mod": 1.34
-    },
-    "alt_damage_profile": null,
-    "slot": "Barrel"
-   },
-   {
-    "gun_name": "AN-94 (No HB)",
-    "att_name": "VLK AN-94 Sila",
-    "modifiers": {
-     "rpm_mod": 1,
-     "range_mod": 1.19
-    },
-    "alt_damage_profile": null,
-    "slot": "Barrel"
-   }
-  ],
+  "attachments": [],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []
@@ -605,6 +616,128 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "AUG (CW)",
+  "display_name": "AUG (CW)",
+  "attachments_type": "AUG (CW)",
+  "type": "TR",
+  "rpm": 464,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 72, 40, 40, 40 ]
+   ],
+   [ 80,
+    [ 72, 40, 40, 40 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "AUG (CW)",
+    "att_name": "Rapid Fire",
+    "modifiers": {
+     "rpm_mod": 1.07,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "AUG (CW)",
+    "att_name": "Strike Team",
+    "modifiers": {
+     "rpm_mod": 1.1,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "AUG (CW)",
+    "att_name": "Titanium",
+    "modifiers": {
+     "rpm_mod": 1.15,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "AX-50",
+  "display_name": "AX-50",
+  "attachments_type": "AX-50",
+  "type": "SR",
+  "rpm": 39,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 112, 107, 91 ]
+   ],
+   [ 100,
+    [ 250, 108, 99, 89 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "AX-50",
+    "att_name": "Singuard Arms Pro",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.17
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "AX-50",
+    "att_name": "17 Factory Barrel",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.87
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "AX-50",
+    "att_name": "32 Factory Barrel",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.21
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "AX-50",
+    "att_name": "Monolithic Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "AX-50",
+    "att_name": "Lightweight Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "Bruen MK9",
   "display_name": "Bruen MK9",
   "attachments_type": "Bruen MK9",
@@ -770,6 +903,57 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "CARV",
+  "display_name": "CARV",
+  "attachments_type": "CARV",
+  "type": "TR",
+  "rpm": 514,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 61, 37, 36, 34 ]
+   ],
+   [ 31,
+    [ 60, 37, 36, 33 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "CARV",
+    "att_name": "Rapid Fire",
+    "modifiers": {
+     "rpm_mod": 1.04,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "CARV",
+    "att_name": "Strike Team",
+    "modifiers": {
+     "rpm_mod": 1.06,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "CARV",
+    "att_name": "Titanium",
+    "modifiers": {
+     "rpm_mod": 1.04,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "CR-56 AMAX",
   "display_name": "CR-56 AMAX",
   "attachments_type": "CR-56 AMAX",
@@ -778,10 +962,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 56, 42, 35, 35 ]
+    [ 52, 42, 35, 35 ]
    ],
    [ 25,
-    [ 49, 36, 31, 31 ]
+    [ 46, 36, 31, 31 ]
    ]
   ],
   "attachments": [
@@ -858,6 +1042,68 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "CW 1911",
+  "display_name": "CW 1911",
+  "attachments_type": "CW 1911",
+  "type": "Pistols",
+  "rpm": 335,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 72, 42, 36, 33 ]
+   ],
+   [ 13,
+    [ 61, 36, 30, 28 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "CW 1911",
+    "att_name": "Akimbo",
+    "modifiers": {
+     "rpm_mod": 2.0,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Perk"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "CW Magnum",
+  "display_name": "CW Magnum",
+  "attachments_type": "CW Magnum",
+  "type": "Pistols",
+  "rpm": 138,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 113, 77, 73, 70 ]
+   ],
+   [ 31,
+    [ 77, 52, 50, 48 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "CW Magnum",
+    "att_name": "Akimbo",
+    "modifiers": {
+     "rpm_mod": 2.0,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Perk"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "CX-9",
   "display_name": "CX-9",
   "attachments_type": "CX-9",
@@ -876,6 +1122,276 @@ DEFAULT_GUNS = [
    ]
   ],
   "attachments": [],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "Crossbow",
+  "display_name": "Crossbow",
+  "attachments_type": "Crossbow",
+  "type": "MR",
+  "rpm": 14,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 300, 120, 101, 90 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Crossbow",
+    "att_name": "FTAC Fury 20 Bolts",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1
+    },
+    "alt_damage_profile": [
+     [ 0,
+      [ 300, 300, 300, 300 ]
+     ]
+    ],
+    "slot": "Bolt"
+   },
+   {
+    "gun_name": "Crossbow",
+    "att_name": "FTAC Backburn 20 Bolts",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1
+    },
+    "alt_damage_profile": [
+     [ 0,
+      [ 300, 173, 170, 166 ]
+     ]
+    ],
+    "slot": "Bolt"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "DMR 14",
+  "display_name": "DMR 14",
+  "attachments_type": "DMR 14",
+  "type": "TR",
+  "rpm": 370,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 112, 60, 55, 55 ]
+   ],
+   [ 19.1,
+    [ 98, 52, 48, 48 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "DMR 14",
+    "att_name": "Strike Team",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.89
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "DMR 14",
+    "att_name": "Titanium",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.79
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "DMR 14",
+    "att_name": "Match Grade",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.26
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "DMR 14",
+    "att_name": "Task Force",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.31
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "Diamatti",
+  "display_name": "Diamatti",
+  "attachments_type": "Diamatti",
+  "type": "Pistols",
+  "rpm": 540,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 64, 40, 40, 40 ]
+   ],
+   [ 11,
+    [ 52, 33, 33, 33 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Diamatti",
+    "att_name": "Akimbo",
+    "modifiers": {
+     "rpm_mod": 2.0,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Perk"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "Dragunov",
+  "display_name": "Dragunov",
+  "attachments_type": "Dragunov",
+  "type": "SR",
+  "rpm": 190,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 175, 136, 70, 70 ]
+   ],
+   [ 68,
+    [ 175, 136, 70, 70 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Dragunov",
+    "att_name": "510mm Compact Barrel",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.86
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Dragunov",
+    "att_name": "660mm Extended Barrel",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.21
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Dragunov",
+    "att_name": "Monolithic Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "Dragunov",
+    "att_name": "Lightweight Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "EBR",
+  "display_name": "EBR",
+  "attachments_type": "EBR",
+  "type": "MR",
+  "rpm": 260,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 175, 60, 60, 55 ]
+   ],
+   [ 56,
+    [ 175, 60, 60, 55 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "EBR",
+    "att_name": "Lightweight Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "EBR",
+    "att_name": "Monolithic Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "EBR",
+    "att_name": "FORGE TAC Precision 20.0",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.25
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "EBR",
+    "att_name": "FORGE TAC Elite",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.96
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "EBR",
+    "att_name": "FORGE TAC Precision 22.0",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.37
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   }
+  ],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []
@@ -1685,6 +2201,77 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "HDR",
+  "display_name": "HDR",
+  "attachments_type": "HDR",
+  "type": "SR",
+  "rpm": 32,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 112, 112, 91 ]
+   ],
+   [ 100,
+    [ 250, 108, 103, 89 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "HDR",
+    "att_name": "26.9 HDR Pro",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.23
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "HDR",
+    "att_name": "26 Bull Barrel",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.75
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "HDR",
+    "att_name": "17.2 Bull Barrel",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.87
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "HDR",
+    "att_name": "Monolithic Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "HDR",
+    "att_name": "Lightweight Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "Holger-26",
   "display_name": "Holger-26",
   "attachments_type": "Holger-26",
@@ -1924,6 +2511,77 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "Kar98k",
+  "display_name": "Kar98k",
+  "attachments_type": "Kar98k",
+  "type": "MR",
+  "rpm": 44,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 154, 86, 86 ]
+   ],
+   [ 62,
+    [ 250, 90, 50, 50 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Kar98k",
+    "att_name": "Monolithic Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "Kar98k",
+    "att_name": "Lightweight Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "Kar98k",
+    "att_name": "Singuard Custom 25.1",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.28
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Kar98k",
+    "att_name": "Singuard Custom 21.2",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.17
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Kar98k",
+    "att_name": "Singuard Custom 27.6",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.36
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "Kilo 141",
   "display_name": "Kilo 141",
   "attachments_type": "Kilo 141",
@@ -2143,6 +2801,37 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "LW3",
+  "display_name": "LW3",
+  "attachments_type": "LW3",
+  "type": "SR",
+  "rpm": 41,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 112, 102, 91 ]
+   ],
+   [ 85,
+    [ 250, 108, 99, 89 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "LW3",
+    "att_name": "Agency Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "M13",
   "display_name": "M13",
   "attachments_type": "M13",
@@ -2217,6 +2906,88 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": null,
     "slot": "Ammunition"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "M16",
+  "display_name": "M16",
+  "attachments_type": "M16",
+  "type": "TR",
+  "rpm": 436,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 72, 40, 40, 40 ]
+   ],
+   [ 80,
+    [ 72, 40, 40, 40 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "M16",
+    "att_name": "Rapid Fire",
+    "modifiers": {
+     "rpm_mod": 1.08,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "M16",
+    "att_name": "Strike Team",
+    "modifiers": {
+     "rpm_mod": 1.08,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "M16",
+    "att_name": "Titanium",
+    "modifiers": {
+     "rpm_mod": 1.08,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "M19",
+  "display_name": "M19",
+  "attachments_type": "M19",
+  "type": "Pistols",
+  "rpm": 313,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 72, 42, 36, 33 ]
+   ],
+   [ 10,
+    [ 61, 36, 30, 28 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "M19",
+    "att_name": "Akimbo",
+    "modifiers": {
+     "rpm_mod": 2.0,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Perk"
    }
   ],
   "is_custom": false,
@@ -2436,6 +3207,37 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "M82",
+  "display_name": "M82",
+  "attachments_type": "M82",
+  "type": "SR",
+  "rpm": 71,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 112, 102, 102 ]
+   ],
+   [ 67,
+    [ 250, 108, 99, 99 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "M82",
+    "att_name": "Agency Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
    }
   ],
   "is_custom": false,
@@ -2937,6 +3739,37 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "MW 1911",
+  "display_name": "MW 1911",
+  "attachments_type": "MW 1911",
+  "type": "Pistols",
+  "rpm": 267,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 72, 42, 36, 33 ]
+   ],
+   [ 14,
+    [ 61, 36, 30, 28 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "MW 1911",
+    "att_name": "Akimbo",
+    "modifiers": {
+     "rpm_mod": 2.0,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Perk"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "Milano 821",
   "display_name": "Milano 821",
   "attachments_type": "Milano 821",
@@ -3027,6 +3860,77 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": null,
     "slot": "Laser"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "Mk2 Carbine",
+  "display_name": "Mk2 Carbine",
+  "attachments_type": "Mk2 Carbine",
+  "type": "MR",
+  "rpm": 88,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 175, 108, 90, 90 ]
+   ],
+   [ 26,
+    [ 175, 108, 90, 90 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Mk2 Carbine",
+    "att_name": "Lightweight Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "Mk2 Carbine",
+    "att_name": "Monolithic Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "Mk2 Carbine",
+    "att_name": "FSS 18.0 Factory",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.18
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Mk2 Carbine",
+    "att_name": "FSS 20.0 Factory",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.28
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Mk2 Carbine",
+    "att_name": "FSS 24.0 Factory",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.36
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
    }
   ],
   "is_custom": false,
@@ -3325,7 +4229,7 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 35, 27, 27, 24 ]
+    [ 36, 28, 28, 25 ]
    ],
    [ 17,
     [ 31, 24, 24, 21 ]
@@ -3344,7 +4248,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "PPSh",
-    "att_name": "Agency Suppressor",
+    "att_name": "GRU Suppressor",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.1
@@ -3367,7 +4271,7 @@ DEFAULT_GUNS = [
     "att_name": "Rifled",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.06
+     "range_mod": 1.07
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -3377,7 +4281,7 @@ DEFAULT_GUNS = [
     "att_name": "Task Force",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.13
+     "range_mod": 1.15
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -3401,6 +4305,37 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": null,
     "slot": "Laser"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "Pelington",
+  "display_name": "Pelington",
+  "attachments_type": "Pelington",
+  "type": "SR",
+  "rpm": 43,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 112, 102, 91 ]
+   ],
+   [ 50,
+    [ 250, 108, 99, 89 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Pelington",
+    "att_name": "Agency Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
    }
   ],
   "is_custom": false,
@@ -3681,6 +4616,126 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "Renetti",
+  "display_name": "Renetti",
+  "attachments_type": "Renetti",
+  "type": "Pistols",
+  "rpm": 313,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 72, 42, 36, 33 ]
+   ],
+   [ 10.8,
+    [ 61, 36, 30, 28 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Renetti",
+    "att_name": "Akimbo",
+    "modifiers": {
+     "rpm_mod": 2.0,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Perk"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "Rytec AMR",
+  "display_name": "Rytec AMR",
+  "attachments_type": "Rytec AMR",
+  "type": "SR",
+  "rpm": 165,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 112, 102, 91 ]
+   ],
+   [ 61,
+    [ 250, 108, 99, 89 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Rytec AMR",
+    "att_name": "FTAC Seven Straight",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.39
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Rytec AMR",
+    "att_name": "FTAC 448mm Dictator",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.76
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Rytec AMR",
+    "att_name": "XRK Harbinger",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.72
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Rytec AMR",
+    "att_name": "Rytec AMR Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "Rytec AMR",
+    "att_name": "25x59mm Explosive 5-R Mags",
+    "modifiers": {
+     "rpm_mod": 0.57,
+     "range_mod": 1
+    },
+    "alt_damage_profile": [
+     [ 0,
+      [ 250, 176, 176, 176 ]
+     ]
+    ],
+    "slot": "Ammunition"
+   },
+   {
+    "gun_name": "Rytec AMR",
+    "att_name": "25x59mm Thermite 5-R Mags",
+    "modifiers": {
+     "rpm_mod": 0.57,
+     "range_mod": 1
+    },
+    "alt_damage_profile": [
+     [ 0,
+      [ 250, 151, 141, 130 ]
+     ]
+    ],
+    "slot": "Ammunition"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "SA87",
   "display_name": "SA87",
   "attachments_type": "SA87",
@@ -3745,6 +4800,217 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": null,
     "slot": "Muzzle"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "SKS",
+  "display_name": "SKS",
+  "attachments_type": "SKS",
+  "type": "MR",
+  "rpm": 315,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 175, 57, 52, 48 ]
+   ],
+   [ 56,
+    [ 175, 57, 52, 48 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "SKS",
+    "att_name": "Lightweight Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "SKS",
+    "att_name": "Monolithic Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "SKS",
+    "att_name": "FTAC Landmark",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.12
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "SKS",
+    "att_name": "16 FSS Para",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "SKS",
+    "att_name": "22 FSS M59/66",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.25
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "SP-R 208",
+  "display_name": "SP-R 208",
+  "attachments_type": "SP-R 208",
+  "type": "MR",
+  "rpm": 47,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 167, 93, 90 ]
+   ],
+   [ 24,
+    [ 250, 162, 90, 90 ]
+   ],
+   [ 30,
+    [ 250, 152, 86, 86 ]
+   ],
+   [ 53,
+    [ 250, 90, 50, 50 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "SP-R 208",
+    "att_name": "Lightweight Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.8
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "SP-R 208",
+    "att_name": "Monolithic Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "SP-R 208",
+    "att_name": "ZLR VeraTwist 9.6",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.18
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "SP-R 208",
+    "att_name": "ZLR Asp",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.76
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "SP-R 208",
+    "att_name": "SP-R 26",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.24
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "SP-R 208",
+    "att_name": "XRK 208 Dragoon",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.11
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "SP-R 208",
+    "att_name": ".300 Norma Mag",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.07
+    },
+    "alt_damage_profile": null,
+    "slot": "Ammunition"
+   },
+   {
+    "gun_name": "SP-R 208",
+    "att_name": ".338 Lapua Mag",
+    "modifiers": {
+     "rpm_mod": 0.9,
+     "range_mod": 1.35
+    },
+    "alt_damage_profile": [
+     [ 0,
+      [ 250, 167, 102, 93 ]
+     ],
+     [ 30,
+      [ 250, 162, 99, 90 ]
+     ],
+     [ 39,
+      [ 250, 154, 94, 86 ]
+     ],
+     [ 74,
+      [ 250, 90, 55, 55 ]
+     ]
+    ],
+    "slot": "Ammunition"
+   },
+   {
+    "gun_name": "SP-R 208",
+    "att_name": "Sloan KR-800 DeadEye",
+    "modifiers": {
+     "rpm_mod": 0.88,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Bolt Assembly"
+   },
+   {
+    "gun_name": "SP-R 208",
+    "att_name": "Sloan KR-600 Feather",
+    "modifiers": {
+     "rpm_mod": 1.2,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Bolt Assembly"
    }
   ],
   "is_custom": false,
@@ -3937,10 +5203,41 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "Swiss K31",
+  "display_name": "Swiss K31",
+  "attachments_type": "Swiss K31",
+  "type": "SR",
+  "rpm": 42,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 180, 104, 83 ]
+   ],
+   [ 50,
+    [ 250, 180, 104, 83 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Swiss K31",
+    "att_name": "Agency Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "Sykov",
   "display_name": "Sykov",
   "attachments_type": "Sykov",
-  "type": "SMG",
+  "type": "Pistols",
   "rpm": 335,
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
@@ -3981,6 +5278,67 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": null,
     "slot": "Perk"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "Type 63",
+  "display_name": "Type 63",
+  "attachments_type": "Type 63",
+  "type": "TR",
+  "rpm": 343,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 124, 72, 66, 60 ]
+   ],
+   [ 22,
+    [ 94, 54, 49, 45 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "Type 63",
+    "att_name": "Strike Team",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.86
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Type 63",
+    "att_name": "Titanium",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.77
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Type 63",
+    "att_name": "Match Grade",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.32
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "Type 63",
+    "att_name": "Task Force",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.36
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
    }
   ],
   "is_custom": false,
@@ -4092,6 +5450,37 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "X16",
+  "display_name": "X16",
+  "attachments_type": "X16",
+  "type": "Pistols",
+  "rpm": 288,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 72, 42, 36, 33 ]
+   ],
+   [ 11,
+    [ 61, 36, 30, 28 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "X16",
+    "att_name": "Akimbo",
+    "modifiers": {
+     "rpm_mod": 2.0,
+     "range_mod": 1
+    },
+    "alt_damage_profile": null,
+    "slot": "Perk"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "XM4",
   "display_name": "XM4",
   "attachments_type": "XM4",
@@ -4176,6 +5565,37 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": null,
     "slot": "Laser"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "ZRG",
+  "display_name": "ZRG",
+  "attachments_type": "ZRG",
+  "type": "SR",
+  "rpm": 43,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 250, 173, 126, 102 ]
+   ],
+   [ 78,
+    [ 250, 168, 123, 99 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "ZRG",
+    "att_name": "Agency Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
    }
   ],
   "is_custom": false,

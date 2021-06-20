@@ -1,5 +1,5 @@
 
-UPDATE_EPOCH = 1622762734;
+UPDATE_EPOCH = 1624203479;
 DEFAULT_GUNS = [
  {
   "name": ".357",
@@ -903,6 +903,26 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
+  "name": "C58",
+  "display_name": "C58",
+  "attachments_type": "C58",
+  "type": "AR",
+  "rpm": 553,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 59, 44, 40, 37 ]
+   ],
+   [ 25,
+    [ 55, 40, 37, 34 ]
+   ]
+  ],
+  "attachments": [],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
   "name": "CARV",
   "display_name": "CARV",
   "attachments_type": "CARV",
@@ -962,10 +982,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 52, 42, 35, 35 ]
+    [ 52, 38, 35, 35 ]
    ],
    [ 25,
-    [ 46, 36, 31, 31 ]
+    [ 46, 34, 31, 31 ]
    ]
   ],
   "attachments": [
@@ -1648,10 +1668,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 56, 35, 35, 35 ]
+    [ 56, 42, 35, 35 ]
    ],
    [ 33,
-    [ 51, 32, 32, 32 ]
+    [ 51, 38, 32, 32 ]
    ]
   ],
   "attachments": [
@@ -2101,10 +2121,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 45, 30, 28, 28 ]
+    [ 45, 33, 30, 28 ]
    ],
-   [ 32,
-    [ 37, 25, 23, 23 ]
+   [ 28,
+    [ 37, 27, 25, 23 ]
    ]
   ],
   "attachments": [
@@ -2145,14 +2165,7 @@ DEFAULT_GUNS = [
      "rpm_mod": 1,
      "range_mod": 0.72
     },
-    "alt_damage_profile": [
-     [ 0,
-      [ 47, 33, 30, 30 ]
-     ],
-     [ 32,
-      [ 39, 25, 23, 23 ]
-     ]
-    ],
+    "alt_damage_profile": null,
     "slot": "Barrel"
    },
    {
@@ -2425,13 +2438,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 64, 40, 40, 36 ]
+    [ 64, 40, 40, 40 ]
    ],
    [ 13,
-    [ 55, 34, 34, 30 ]
-   ],
-   [ 21,
-    [ 54, 34, 34, 30 ]
+    [ 55, 34, 34, 34 ]
    ]
   ],
   "attachments": [
@@ -2522,7 +2532,7 @@ DEFAULT_GUNS = [
     [ 250, 154, 86, 86 ]
    ],
    [ 62,
-    [ 250, 90, 50, 50 ]
+    [ 250, 154, 86, 86 ]
    ]
   ],
   "attachments": [
@@ -3213,7 +3223,7 @@ DEFAULT_GUNS = [
     "att_name": "Task Force",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.31
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -3499,6 +3509,26 @@ DEFAULT_GUNS = [
     "slot": "Muzzle"
    }
   ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "MG82",
+  "display_name": "MG82",
+  "attachments_type": "MG82",
+  "type": "LMG",
+  "rpm": 930,
+  "open_bolt_delay_ms": 67,
+  "default_damage_profile": [
+   [ 0,
+    [ 39, 33, 30, 30 ]
+   ],
+   [ 27,
+    [ 36, 30, 28, 28 ]
+   ]
+  ],
+  "attachments": [],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []
@@ -3795,19 +3825,13 @@ DEFAULT_GUNS = [
   "attachments_type": "Milano 821",
   "type": "SMG",
   "rpm": 576,
-  "open_bolt_delay_ms": 0,
+  "open_bolt_delay_ms": 58,
   "default_damage_profile": [
    [ 0,
-    [ 55, 34, 34, 30 ]
+    [ 58, 43, 39, 36 ]
    ],
-   [ 16,
-    [ 40, 25, 25, 22 ]
-   ],
-   [ 25,
-    [ 35, 22, 22, 19 ]
-   ],
-   [ 37,
-    [ 34, 22, 22, 19 ]
+   [ 21,
+    [ 48, 36, 33, 30 ]
    ]
   ],
   "attachments": [
@@ -3953,6 +3977,26 @@ DEFAULT_GUNS = [
     "slot": "Barrel"
    }
   ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "Nail Gun",
+  "display_name": "Nail Gun",
+  "attachments_type": "Nail Gun",
+  "type": "SMG",
+  "rpm": 515,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 81, 64, 50, 50 ]
+   ],
+   [ 17,
+    [ 63, 49, 39, 39 ]
+   ]
+  ],
+  "attachments": [],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []
@@ -4182,16 +4226,13 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 55, 34, 34, 30 ]
+    [ 56, 35, 35, 35 ]
    ],
-   [ 13,
-    [ 40, 25, 25, 22 ]
+   [ 14,
+    [ 40, 25, 25, 25 ]
    ],
    [ 22,
-    [ 32, 20, 20, 18 ]
-   ],
-   [ 32,
-    [ 31, 20, 20, 17 ]
+    [ 30, 20, 20, 20 ]
    ]
   ],
   "attachments": [
@@ -4246,7 +4287,7 @@ DEFAULT_GUNS = [
   "attachments_type": "PPSh",
   "type": "SMG",
   "rpm": 904,
-  "open_bolt_delay_ms": 0,
+  "open_bolt_delay_ms": 33,
   "default_damage_profile": [
    [ 0,
     [ 36, 28, 28, 25 ]
@@ -4433,7 +4474,7 @@ DEFAULT_GUNS = [
     "att_name": "Reinforced Heavy",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.23
+     "range_mod": 1.18
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -4453,7 +4494,7 @@ DEFAULT_GUNS = [
     "att_name": "Task Force",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.13
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -4635,7 +4676,7 @@ DEFAULT_GUNS = [
     "att_name": "Task Force",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.3
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -5128,7 +5169,7 @@ DEFAULT_GUNS = [
     "att_name": "Task Force",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.3
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -5254,6 +5295,16 @@ DEFAULT_GUNS = [
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "Swiss K31",
+    "att_name": "Sound Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
     },
     "alt_damage_profile": null,
     "slot": "Muzzle"

@@ -1,5 +1,5 @@
 
-UPDATE_EPOCH = 1624203479;
+UPDATE_EPOCH = 1624762404;
 DEFAULT_GUNS = [
  {
   "name": ".357",
@@ -185,7 +185,7 @@ DEFAULT_GUNS = [
     "att_name": "VDV Reinforced",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.28
+     "range_mod": 1.18
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -195,7 +195,7 @@ DEFAULT_GUNS = [
     "att_name": "Takedown",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.4
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -205,7 +205,7 @@ DEFAULT_GUNS = [
     "att_name": "Spetsnaz RPK Barrel",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.16
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -917,7 +917,78 @@ DEFAULT_GUNS = [
     [ 55, 40, 37, 34 ]
    ]
   ],
-  "attachments": [],
+  "attachments": [
+   {
+    "gun_name": "C58",
+    "att_name": "Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "C58",
+    "att_name": "Agency Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "C58",
+    "att_name": "Reinforced Heavy",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.18
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "C58",
+    "att_name": "Takedown",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.35
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "C58",
+    "att_name": "Task Force",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.35
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "C58",
+    "att_name": "SOF Target Designator",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.04
+    },
+    "alt_damage_profile": null,
+    "slot": "Laser"
+   },
+   {
+    "gun_name": "C58",
+    "att_name": "Ember Sighting Point",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.08
+    },
+    "alt_damage_profile": null,
+    "slot": "Laser"
+   }
+  ],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []
@@ -1545,10 +1616,20 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "FARA",
+    "att_name": "Contour",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.18
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "FARA",
     "att_name": "Takedown",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.36
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -1558,7 +1639,7 @@ DEFAULT_GUNS = [
     "att_name": "Spetsnaz RPK",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.14
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -1609,7 +1690,7 @@ DEFAULT_GUNS = [
     "att_name": "19.5 Reinforced Heavy",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.2
+     "range_mod": 1.18
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -1619,7 +1700,7 @@ DEFAULT_GUNS = [
     "att_name": "20.3 Takedown",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.33
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -1629,7 +1710,7 @@ DEFAULT_GUNS = [
     "att_name": "19.5 Task Force",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.11
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -2133,7 +2214,7 @@ DEFAULT_GUNS = [
     "att_name": "VDV Reinforced",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.25
+     "range_mod": 1.18
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -2163,7 +2244,7 @@ DEFAULT_GUNS = [
     "att_name": "CMV Mil-Spec",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 0.72
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -2686,7 +2767,7 @@ DEFAULT_GUNS = [
     "att_name": "Takedown",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.37
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -2696,7 +2777,7 @@ DEFAULT_GUNS = [
     "att_name": "CMV Mil-Spec",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 0.76
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -3213,7 +3294,7 @@ DEFAULT_GUNS = [
     "att_name": "Match Grade",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.24
+     "range_mod": 1.18
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -3242,10 +3323,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 250, 112, 102, 102 ]
+    [ 250, 128, 117, 102 ]
    ],
    [ 67,
-    [ 250, 108, 99, 99 ]
+    [ 250, 123, 113, 99 ]
    ]
   ],
   "attachments": [
@@ -3517,6 +3598,97 @@ DEFAULT_GUNS = [
   "name": "MG82",
   "display_name": "MG82",
   "attachments_type": "MG82",
+  "type": "LMG",
+  "rpm": 930,
+  "open_bolt_delay_ms": 67,
+  "default_damage_profile": [
+   [ 0,
+    [ 35, 29, 29, 26 ]
+   ],
+   [ 22,
+    [ 32, 27, 27, 24 ]
+   ]
+  ],
+  "attachments": [
+   {
+    "gun_name": "MG82",
+    "att_name": "Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "MG82",
+    "att_name": "Agency Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "MG82",
+    "att_name": "SOF Target Designator",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.04
+    },
+    "alt_damage_profile": null,
+    "slot": "Laser"
+   },
+   {
+    "gun_name": "MG82",
+    "att_name": "Division",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "MG82",
+    "att_name": "SOR Cut Down",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.7
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "MG82",
+    "att_name": "Match Grade",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.18
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "MG82",
+    "att_name": "Task Force",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.35
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   }
+  ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "MG82 (Pre nerf)",
+  "display_name": "MG82 (Pre nerf)",
+  "attachments_type": "MG82 (Pre nerf)",
   "type": "LMG",
   "rpm": 930,
   "open_bolt_delay_ms": 67,
@@ -4643,6 +4815,16 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "RPD",
+    "att_name": "Spetsnaz RPK Barrel",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.35
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "RPD",
     "att_name": "Division",
     "modifiers": {
      "rpm_mod": 1,
@@ -4666,7 +4848,7 @@ DEFAULT_GUNS = [
     "att_name": "Match Grade",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.23
+     "range_mod": 1.18
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -4959,14 +5141,8 @@ DEFAULT_GUNS = [
    [ 0,
     [ 250, 167, 93, 90 ]
    ],
-   [ 24,
-    [ 250, 162, 90, 90 ]
-   ],
-   [ 30,
-    [ 250, 152, 86, 86 ]
-   ],
-   [ 53,
-    [ 250, 90, 50, 50 ]
+   [ 100,
+    [ 250, 167, 93, 90 ]
    ]
   ],
   "attachments": [
@@ -5051,14 +5227,8 @@ DEFAULT_GUNS = [
      [ 0,
       [ 250, 167, 102, 93 ]
      ],
-     [ 30,
-      [ 250, 162, 99, 90 ]
-     ],
-     [ 39,
-      [ 250, 154, 94, 86 ]
-     ],
-     [ 74,
-      [ 250, 90, 55, 55 ]
+     [ 100,
+      [ 250, 167, 102, 93 ]
      ]
     ],
     "slot": "Ammunition"
@@ -5159,7 +5329,7 @@ DEFAULT_GUNS = [
     "att_name": "Match Grade",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.23
+     "range_mod": 1.18
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -5582,7 +5752,7 @@ DEFAULT_GUNS = [
     "att_name": "Reinforced Heavy",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.23
+     "range_mod": 1.18
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -5592,7 +5762,7 @@ DEFAULT_GUNS = [
     "att_name": "Takedown",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.36
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"
@@ -5602,7 +5772,7 @@ DEFAULT_GUNS = [
     "att_name": "Task Force",
     "modifiers": {
      "rpm_mod": 1,
-     "range_mod": 1.14
+     "range_mod": 1.35
     },
     "alt_damage_profile": null,
     "slot": "Barrel"

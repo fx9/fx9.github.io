@@ -72,10 +72,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 56, 42, 35, 35 ]
+    [ 56, 38, 35, 35 ]
    ],
    [ 28,
-    [ 51, 38, 32, 32 ]
+    [ 51, 35, 32, 32 ]
    ]
   ],
   "attachments": [
@@ -173,10 +173,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 58, 43, 36, 36 ]
+    [ 54, 40, 36, 36 ]
    ],
    [ 25,
-    [ 51, 38, 32, 32 ]
+    [ 48, 35, 32, 32 ]
    ]
   ],
   "attachments": [
@@ -254,10 +254,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 56, 35, 35, 35 ]
+    [ 50, 31, 31, 31 ]
    ],
    [ 18,
-    [ 40, 25, 25, 25 ]
+    [ 42, 26, 26, 26 ]
    ],
    [ 25,
     [ 32, 20, 20, 20 ]
@@ -624,10 +624,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 72, 40, 40, 40 ]
+    [ 68, 40, 40, 40 ]
    ],
    [ 80,
-    [ 72, 40, 40, 40 ]
+    [ 68, 40, 40, 40 ]
    ]
   ],
   "attachments": [
@@ -817,13 +817,13 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 50, 32, 32, 28 ]
+    [ 46, 31, 31, 31 ]
    ],
    [ 15,
-    [ 39, 24, 24, 21 ]
+    [ 36, 24, 24, 24 ]
    ],
    [ 20,
-    [ 31, 20, 20, 18 ]
+    [ 30, 20, 20, 20 ]
    ]
   ],
   "attachments": [
@@ -911,10 +911,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 59, 44, 40, 37 ]
+    [ 58, 37, 37, 37 ]
    ],
-   [ 25,
-    [ 55, 40, 37, 34 ]
+   [ 27,
+    [ 54, 34, 34, 34 ]
    ]
   ],
   "attachments": [
@@ -1002,10 +1002,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 61, 37, 36, 34 ]
+    [ 54, 37, 36, 34 ]
    ],
    [ 31,
-    [ 60, 37, 36, 33 ]
+    [ 53, 37, 36, 33 ]
    ]
   ],
   "attachments": [
@@ -1053,10 +1053,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 52, 38, 35, 35 ]
+    [ 54, 35, 35, 35 ]
    ],
    [ 25,
-    [ 46, 34, 31, 31 ]
+    [ 48, 31, 31, 31 ]
    ]
   ],
   "attachments": [
@@ -1496,10 +1496,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 100, 58, 49, 49 ]
+    [ 79, 54, 49, 49 ]
    ],
    [ 21,
-    [ 92, 54, 45, 45 ]
+    [ 73, 50, 45, 45 ]
    ]
   ],
   "attachments": [
@@ -1567,7 +1567,7 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 40, 31, 31, 31 ]
+    [ 37, 29, 29, 29 ]
    ],
    [ 27,
     [ 35, 26, 26, 26 ]
@@ -1658,10 +1658,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 40, 27, 27, 27 ]
+    [ 35, 25, 25, 25 ]
    ],
-   [ 31,
-    [ 37, 25, 25, 25 ]
+   [ 25,
+    [ 32, 23, 23, 23 ]
    ]
   ],
   "attachments": [
@@ -1749,10 +1749,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 56, 42, 35, 35 ]
+    [ 56, 38, 35, 35 ]
    ],
    [ 33,
-    [ 51, 38, 32, 32 ]
+    [ 51, 35, 32, 32 ]
    ]
   ],
   "attachments": [
@@ -1891,10 +1891,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 40, 25, 25, 22 ]
+    [ 38, 24, 24, 21 ]
    ],
    [ 12.6,
-    [ 32, 20, 20, 18 ]
+    [ 30, 19, 19, 17 ]
    ],
    [ 18.2,
     [ 29, 18, 18, 16 ]
@@ -2114,7 +2114,7 @@ DEFAULT_GUNS = [
     [ 42, 28, 28, 28 ]
    ],
    [ 31,
-    [ 33, 22, 22, 22 ]
+    [ 36, 24, 24, 24 ]
    ]
   ],
   "attachments": [
@@ -2202,10 +2202,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 45, 33, 30, 28 ]
+    [ 40, 30, 27, 27 ]
    ],
    [ 28,
-    [ 37, 27, 25, 23 ]
+    [ 35, 26, 23, 23 ]
    ]
   ],
   "attachments": [
@@ -2438,10 +2438,7 @@ DEFAULT_GUNS = [
     [ 36, 25, 25, 22 ]
    ],
    [ 18,
-    [ 29, 20, 20, 18 ]
-   ],
-   [ 23,
-    [ 28, 20, 20, 17 ]
+    [ 31, 21, 21, 19 ]
    ]
   ],
   "attachments": [
@@ -2519,10 +2516,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 64, 40, 40, 40 ]
+    [ 62, 40, 40, 40 ]
    ],
    [ 13,
-    [ 55, 34, 34, 34 ]
+    [ 53, 34, 34, 34 ]
    ]
   ],
   "attachments": [
@@ -2758,7 +2755,7 @@ DEFAULT_GUNS = [
     [ 45, 33, 33, 30 ]
    ],
    [ 38,
-    [ 38, 28, 28, 25 ]
+    [ 39, 29, 29, 26 ]
    ]
   ],
   "attachments": [
@@ -2826,13 +2823,13 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 48, 30, 30, 27 ]
+    [ 42, 27, 27, 24 ]
    ],
    [ 20,
-    [ 40, 25, 25, 22 ]
+    [ 37, 24, 24, 22 ]
    ],
    [ 26,
-    [ 35, 22, 22, 19 ]
+    [ 34, 22, 22, 19 ]
    ]
   ],
   "attachments": [
@@ -2944,7 +2941,7 @@ DEFAULT_GUNS = [
     [ 36, 24, 24, 24 ]
    ],
    [ 37,
-    [ 28, 19, 19, 19 ]
+    [ 30, 20, 20, 20 ]
    ]
   ],
   "attachments": [
@@ -3022,10 +3019,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 72, 40, 40, 40 ]
+    [ 64, 40, 40, 40 ]
    ],
    [ 80,
-    [ 72, 40, 40, 40 ]
+    [ 64, 40, 40, 40 ]
    ]
   ],
   "attachments": [
@@ -3104,10 +3101,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 42, 28, 28, 28 ]
+    [ 40, 27, 27, 27 ]
    ],
    [ 29,
-    [ 33, 22, 22, 22 ]
+    [ 35, 23, 23, 23 ]
    ]
   ],
   "attachments": [
@@ -3232,7 +3229,7 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 54,
   "default_damage_profile": [
    [ 0,
-    [ 54, 39, 36, 36 ]
+    [ 59, 40, 37, 37 ]
    ],
    [ 42,
     [ 51, 35, 32, 32 ]
@@ -3435,16 +3432,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 50,
   "default_damage_profile": [
    [ 0,
-    [ 29, 24, 24, 21 ]
+    [ 28, 23, 23, 20 ]
    ],
    [ 15.5,
-    [ 24, 20, 20, 17 ]
-   ],
-   [ 23,
     [ 23, 19, 19, 17 ]
-   ],
-   [ 32,
-    [ 22, 19, 19, 16 ]
    ]
   ],
   "attachments": [
@@ -3532,10 +3523,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 67,
   "default_damage_profile": [
    [ 0,
-    [ 46, 34, 31, 31 ]
+    [ 41, 29, 29, 29 ]
    ],
    [ 33,
-    [ 42, 30, 28, 28 ]
+    [ 38, 27, 27, 27 ]
    ]
   ],
   "attachments": [
@@ -3714,10 +3705,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 47, 33, 33, 29 ]
+    [ 44, 31, 31, 29 ]
    ],
    [ 9,
-    [ 36, 25, 25, 22 ]
+    [ 34, 24, 24, 22 ]
    ],
    [ 16,
     [ 31, 22, 22, 19 ]
@@ -4000,10 +3991,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 58,
   "default_damage_profile": [
    [ 0,
-    [ 58, 43, 39, 36 ]
+    [ 50, 39, 36, 36 ]
    ],
-   [ 21,
-    [ 48, 36, 33, 30 ]
+   [ 18,
+    [ 41, 33, 30, 30 ]
    ]
   ],
   "attachments": [
@@ -4162,10 +4153,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 81, 64, 50, 50 ]
+    [ 67, 46, 46, 46 ]
    ],
    [ 17,
-    [ 63, 49, 39, 39 ]
+    [ 57, 39, 39, 39 ]
    ]
   ],
   "attachments": [],
@@ -4182,10 +4173,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 77, 62, 48, 48 ]
+    [ 77, 58, 48, 48 ]
    ],
    [ 43,
-    [ 58, 46, 36, 36 ]
+    [ 58, 43, 36, 36 ]
    ]
   ],
   "attachments": [
@@ -4327,10 +4318,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 67,
   "default_damage_profile": [
    [ 0,
-    [ 46, 34, 31, 31 ]
+    [ 48, 32, 32, 32 ]
    ],
-   [ 39,
-    [ 42, 30, 28, 28 ]
+   [ 36,
+    [ 42, 28, 28, 28 ]
    ]
   ],
   "attachments": [
@@ -4398,13 +4389,13 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 56, 35, 35, 35 ]
+    [ 54, 34, 34, 34 ]
    ],
    [ 14,
-    [ 40, 25, 25, 25 ]
+    [ 42, 26, 26, 26 ]
    ],
    [ 22,
-    [ 30, 20, 20, 20 ]
+    [ 32, 20, 20, 20 ]
    ]
   ],
   "attachments": [
@@ -4462,7 +4453,7 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 33,
   "default_damage_profile": [
    [ 0,
-    [ 36, 28, 28, 25 ]
+    [ 33, 26, 26, 23 ]
    ],
    [ 17,
     [ 31, 24, 24, 21 ]
@@ -4594,10 +4585,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 42, 30, 28, 28 ]
+    [ 42, 33, 30, 28 ]
    ],
    [ 31,
-    [ 33, 24, 22, 22 ]
+    [ 33, 28, 26, 24 ]
    ]
   ],
   "attachments": [
@@ -4705,7 +4696,7 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 42, 28, 28, 28 ]
+    [ 39, 26, 26, 26 ]
    ],
    [ 28,
     [ 34, 23, 23, 23 ]
@@ -4997,10 +4988,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 51, 40, 37, 34 ]
+    [ 51, 37, 37, 34 ]
    ],
    [ 48,
-    [ 43, 34, 31, 29 ]
+    [ 43, 31, 31, 29 ]
    ]
   ],
   "attachments": [
@@ -5267,10 +5258,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 67,
   "default_damage_profile": [
    [ 0,
-    [ 51, 37, 34, 34 ]
+    [ 51, 33, 33, 33 ]
    ],
    [ 40,
-    [ 42, 30, 28, 28 ]
+    [ 42, 28, 28, 28 ]
    ]
   ],
   "attachments": [
@@ -5608,7 +5599,7 @@ DEFAULT_GUNS = [
     [ 55, 34, 34, 30 ]
    ],
    [ 15,
-    [ 40, 25, 25, 22 ]
+    [ 42, 26, 26, 23 ]
    ],
    [ 24,
     [ 35, 22, 22, 19 ]
@@ -5740,10 +5731,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 48, 32, 32, 32 ]
+    [ 45, 30, 30, 30 ]
    ],
    [ 22,
-    [ 42, 28, 28, 28 ]
+    [ 40, 27, 27, 27 ]
    ]
   ],
   "attachments": [

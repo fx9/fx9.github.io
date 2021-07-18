@@ -1,5 +1,5 @@
 
-UPDATE_EPOCH = 1626368027;
+UPDATE_EPOCH = 1626648177;
 DEFAULT_GUNS = [
  {
   "name": ".357",
@@ -148,13 +148,13 @@ DEFAULT_GUNS = [
     },
     "alt_damage_profile": [
      [ 0,
-      [ 55, 40, 34, 34 ]
+      [ 55, 37, 34, 34 ]
      ],
      [ 17,
-      [ 50, 37, 31, 31 ]
+      [ 50, 34, 31, 31 ]
      ],
      [ 26,
-      [ 40, 30, 25, 25 ]
+      [ 40, 27, 25, 25 ]
      ]
     ],
     "slot": "Ammunition"
@@ -173,10 +173,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 54, 40, 36, 36 ]
+    [ 54, 36, 36, 36 ]
    ],
-   [ 25,
-    [ 48, 35, 32, 32 ]
+   [ 26,
+    [ 48, 32, 32, 32 ]
    ]
   ],
   "attachments": [
@@ -254,16 +254,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 50, 31, 31, 31 ]
+    [ 49, 34, 31, 31 ]
    ],
-   [ 18,
-    [ 42, 26, 26, 26 ]
-   ],
-   [ 25,
-    [ 32, 20, 20, 20 ]
-   ],
-   [ 32,
-    [ 31, 20, 20, 20 ]
+   [ 14,
+    [ 41, 28, 26, 26 ]
    ]
   ],
   "attachments": [
@@ -510,13 +504,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 55, 34, 34, 30 ]
+    [ 49, 34, 34, 30 ]
    ],
-   [ 12.5,
-    [ 40, 25, 25, 22 ]
-   ],
-   [ 21,
-    [ 32, 20, 20, 18 ]
+   [ 13.5,
+    [ 38, 26, 26, 23 ]
    ]
   ],
   "attachments": [
@@ -817,13 +808,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 46, 31, 31, 31 ]
    ],
-   [ 15,
     [ 36, 24, 24, 24 ]
-   ],
-   [ 20,
-    [ 30, 20, 20, 20 ]
+   [ 13,
+    [ 37, 25, 25, 22 ]
    ]
   ],
   "attachments": [
@@ -911,10 +899,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 58, 37, 37, 37 ]
+    [ 54, 36, 36, 36 ]
    ],
-   [ 27,
-    [ 54, 34, 34, 34 ]
+   [ 26,
+    [ 53, 34, 34, 34 ]
    ]
   ],
   "attachments": [
@@ -1002,10 +990,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 54, 37, 36, 34 ]
+    [ 61, 37, 36, 34 ]
    ],
    [ 31,
-    [ 53, 37, 36, 33 ]
+    [ 60, 37, 36, 33 ]
    ]
   ],
   "attachments": [
@@ -1121,8 +1109,9 @@ DEFAULT_GUNS = [
      [ 0,
       [ 100, 57, 52, 48 ]
      ],
-     [ 25,
       [ 94, 54, 49, 45 ]
+     [ 37,
+      [ 93, 54, 49, 45 ]
      ]
     ],
     "slot": "Ammunition"
@@ -1496,10 +1485,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 79, 54, 49, 49 ]
+    [ 79, 53, 49, 49 ]
    ],
    [ 21,
-    [ 73, 50, 45, 45 ]
+    [ 72, 49, 45, 45 ]
    ]
   ],
   "attachments": [
@@ -1567,7 +1556,7 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 37, 29, 29, 29 ]
+    [ 39, 29, 29, 29 ]
    ],
    [ 27,
     [ 35, 26, 26, 26 ]
@@ -1660,7 +1649,7 @@ DEFAULT_GUNS = [
    [ 0,
     [ 35, 25, 25, 25 ]
    ],
-   [ 25,
+   [ 26,
     [ 32, 23, 23, 23 ]
    ]
   ],
@@ -1751,7 +1740,7 @@ DEFAULT_GUNS = [
    [ 0,
     [ 56, 38, 35, 35 ]
    ],
-   [ 33,
+   [ 31,
     [ 51, 35, 32, 32 ]
    ]
   ],
@@ -1893,11 +1882,8 @@ DEFAULT_GUNS = [
    [ 0,
     [ 38, 24, 24, 21 ]
    ],
-   [ 12.6,
+   [ 13,
     [ 30, 19, 19, 17 ]
-   ],
-   [ 18.2,
-    [ 29, 18, 18, 16 ]
    ]
   ],
   "attachments": [
@@ -2202,10 +2188,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 40, 30, 27, 27 ]
+    [ 40, 28, 27, 27 ]
    ],
-   [ 28,
-    [ 35, 26, 23, 23 ]
+   [ 30,
+    [ 34, 25, 23, 23 ]
    ]
   ],
   "attachments": [
@@ -2377,7 +2363,7 @@ DEFAULT_GUNS = [
     [ 42, 28, 28, 28 ]
    ],
    [ 48,
-    [ 34, 24, 24, 24 ]
+    [ 34, 23, 23, 23 ]
    ]
   ],
   "attachments": [
@@ -2438,7 +2424,7 @@ DEFAULT_GUNS = [
     [ 36, 25, 25, 22 ]
    ],
    [ 18,
-    [ 31, 21, 21, 19 ]
+    [ 30, 21, 21, 18 ]
    ]
   ],
   "attachments": [
@@ -2755,10 +2741,20 @@ DEFAULT_GUNS = [
     [ 45, 33, 33, 30 ]
    ],
    [ 38,
-    [ 39, 29, 29, 26 ]
+    [ 38, 28, 28, 26 ]
    ]
   ],
   "attachments": [
+   {
+    "gun_name": "Krig 6",
+    "att_name": "Contour",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.18
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
    {
     "gun_name": "Krig 6",
     "att_name": "Takedown",
@@ -2823,13 +2819,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 42, 27, 27, 24 ]
+    [ 41, 27, 27, 24 ]
    ],
    [ 20,
-    [ 37, 24, 24, 22 ]
-   ],
-   [ 26,
-    [ 34, 22, 22, 19 ]
+    [ 37, 24, 24, 21 ]
    ]
   ],
   "attachments": [
@@ -2940,7 +2933,7 @@ DEFAULT_GUNS = [
    [ 0,
     [ 36, 24, 24, 24 ]
    ],
-   [ 37,
+   [ 34,
     [ 30, 20, 20, 20 ]
    ]
   ],
@@ -3104,7 +3097,7 @@ DEFAULT_GUNS = [
     [ 40, 27, 27, 27 ]
    ],
    [ 29,
-    [ 35, 23, 23, 23 ]
+    [ 34, 23, 23, 23 ]
    ]
   ],
   "attachments": [
@@ -3189,10 +3182,10 @@ DEFAULT_GUNS = [
      [ 0,
       [ 40, 25, 25, 22 ]
      ],
-     [ 16,
+     [ 12,
       [ 32, 20, 20, 17 ]
      ],
-     [ 18.5,
+     [ 17,
       [ 29, 18, 18, 16 ]
      ]
     ],
@@ -3432,10 +3425,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 50,
   "default_damage_profile": [
    [ 0,
-    [ 28, 23, 23, 20 ]
+    [ 27, 23, 23, 20 ]
    ],
    [ 15.5,
-    [ 23, 19, 19, 17 ]
+    [ 22, 19, 19, 17 ]
    ]
   ],
   "attachments": [
@@ -3523,10 +3516,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 67,
   "default_damage_profile": [
    [ 0,
-    [ 41, 29, 29, 29 ]
+    [ 40, 29, 29, 29 ]
    ],
    [ 33,
-    [ 38, 27, 27, 27 ]
+    [ 37, 27, 27, 27 ]
    ]
   ],
   "attachments": [
@@ -3677,26 +3670,6 @@ DEFAULT_GUNS = [
   "advanced_options": []
  },
  {
-  "name": "MG82 (Pre nerf)",
-  "display_name": "MG82 (Pre nerf)",
-  "attachments_type": "MG82 (Pre nerf)",
-  "type": "LMG",
-  "rpm": 930,
-  "open_bolt_delay_ms": 67,
-  "default_damage_profile": [
-   [ 0,
-    [ 39, 33, 30, 30 ]
-   ],
-   [ 27,
-    [ 36, 30, 28, 28 ]
-   ]
-  ],
-  "attachments": [],
-  "is_custom": false,
-  "selected_attachments": [],
-  "advanced_options": []
- },
- {
   "name": "MP5 (CW)",
   "display_name": "MP5 (CW)",
   "attachments_type": "MP5 (CW)",
@@ -3705,13 +3678,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 44, 31, 31, 29 ]
+    [ 44, 31, 31, 27 ]
    ],
    [ 9,
-    [ 34, 24, 24, 22 ]
-   ],
-   [ 16,
-    [ 31, 22, 22, 19 ]
+    [ 34, 24, 24, 21 ]
    ]
   ],
   "attachments": [
@@ -3991,10 +3961,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 58,
   "default_damage_profile": [
    [ 0,
-    [ 50, 39, 36, 36 ]
+    [ 49, 43, 39, 36 ]
    ],
-   [ 18,
-    [ 41, 33, 30, 30 ]
+   [ 21,
+    [ 41, 36, 33, 30 ]
    ]
   ],
   "attachments": [
@@ -4153,10 +4123,33 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 67, 46, 46, 46 ]
+    [ 66, 46, 46, 46 ]
    ],
    [ 17,
-    [ 57, 39, 39, 39 ]
+    [ 56, 39, 39, 39 ]
+   ]
+  ],
+  "attachments": [],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "OTs 9",
+  "display_name": "OTs 9",
+  "attachments_type": "OTs 9",
+  "type": "SMG",
+  "rpm": 855,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 45, 34, 34, 30 ]
+   ],
+   [ 8.2,
+    [ 31, 23, 23, 20 ]
+   ],
+   [ 16,
+    [ 27, 20, 20, 18 ]
    ]
   ],
   "attachments": [],
@@ -4173,7 +4166,7 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 77, 58, 48, 48 ]
+    [ 77, 57, 48, 48 ]
    ],
    [ 43,
     [ 58, 43, 36, 36 ]
@@ -4258,9 +4251,6 @@ DEFAULT_GUNS = [
    ],
    [ 12.8,
     [ 32, 20, 20, 18 ]
-   ],
-   [ 19.2,
-    [ 29, 18, 18, 16 ]
    ]
   ],
   "attachments": [
@@ -4320,7 +4310,7 @@ DEFAULT_GUNS = [
    [ 0,
     [ 48, 32, 32, 32 ]
    ],
-   [ 36,
+   [ 39,
     [ 42, 28, 28, 28 ]
    ]
   ],
@@ -4389,13 +4379,13 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 54, 34, 34, 34 ]
+    [ 55, 34, 34, 34 ]
    ],
    [ 14,
-    [ 42, 26, 26, 26 ]
+    [ 40, 26, 26, 26 ]
    ],
    [ 22,
-    [ 32, 20, 20, 20 ]
+    [ 30, 19, 19, 19 ]
    ]
   ],
   "attachments": [
@@ -4588,7 +4578,7 @@ DEFAULT_GUNS = [
     [ 42, 33, 30, 28 ]
    ],
    [ 31,
-    [ 33, 28, 26, 24 ]
+    [ 36, 28, 26, 24 ]
    ]
   ],
   "attachments": [
@@ -5258,7 +5248,7 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 67,
   "default_damage_profile": [
    [ 0,
-    [ 51, 33, 33, 33 ]
+    [ 49, 33, 33, 33 ]
    ],
    [ 40,
     [ 42, 28, 28, 28 ]
@@ -5420,11 +5410,8 @@ DEFAULT_GUNS = [
      [ 0,
       [ 77, 50, 48, 43 ]
      ],
-     [ 14.5,
+     [ 16,
       [ 61, 39, 38, 34 ]
-     ],
-     [ 24,
-      [ 55, 35, 34, 30 ]
      ]
     ],
     "slot": "Ammunition"
@@ -5598,11 +5585,8 @@ DEFAULT_GUNS = [
    [ 0,
     [ 55, 34, 34, 30 ]
    ],
-   [ 15,
+   [ 16,
     [ 42, 26, 26, 23 ]
-   ],
-   [ 24,
-    [ 35, 22, 22, 19 ]
    ]
   ],
   "attachments": [
@@ -5679,9 +5663,6 @@ DEFAULT_GUNS = [
      ],
      [ 17.5,
       [ 46, 34, 29, 29 ]
-     ],
-     [ 30,
-      [ 40, 30, 25, 25 ]
      ]
     ],
     "slot": "Ammunition"

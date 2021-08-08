@@ -1,5 +1,5 @@
 
-UPDATE_EPOCH = 1626648177;
+UPDATE_EPOCH = 1628441244;
 DEFAULT_GUNS = [
  {
   "name": ".357",
@@ -273,7 +273,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "AK-74u",
-    "att_name": "Agency Suppressor",
+    "att_name": "Gru Suppressor",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.1
@@ -283,7 +283,7 @@ DEFAULT_GUNS = [
    },
    {
     "gun_name": "AK-74u",
-    "att_name": "Reinforced Heavy",
+    "att_name": "VDV Reinforced",
     "modifiers": {
      "rpm_mod": 1,
      "range_mod": 1.06
@@ -332,6 +332,29 @@ DEFAULT_GUNS = [
     "slot": "Laser"
    }
   ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "AMP",
+  "display_name": "AMP",
+  "attachments_type": "AMP",
+  "type": "Pistols",
+  "rpm": 644,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 42, 39, 36, 33 ]
+   ],
+   [ 11,
+    [ 36, 33, 30, 28 ]
+   ],
+   [ 18,
+    [ 30, 28, 26, 24 ]
+   ]
+  ],
+  "attachments": [],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []
@@ -615,10 +638,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 68, 40, 40, 40 ]
+    [ 72, 40, 40, 40 ]
    ],
    [ 80,
-    [ 68, 40, 40, 40 ]
+    [ 72, 40, 40, 40 ]
    ]
   ],
   "attachments": [
@@ -1187,17 +1210,40 @@ DEFAULT_GUNS = [
   "display_name": "CX-9",
   "attachments_type": "CX-9",
   "type": "SMG",
-  "rpm": 1040,
+  "rpm": 1036,
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 36, 25, 25, 22 ]
+    [ 34, 24, 24, 21 ]
    ],
-   [ 18,
-    [ 29, 20, 20, 18 ]
+   [ 13,
+    [ 30, 21, 21, 18 ]
    ],
-   [ 31,
-    [ 28, 20, 20, 17 ]
+   [ 22,
+    [ 26, 19, 19, 17 ]
+   ]
+  ],
+  "attachments": [],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "CX-9 (Pre--buff)",
+  "display_name": "CX-9 (Pre--buff)",
+  "attachments_type": "CX-9 (Pre--buff)",
+  "type": "SMG",
+  "rpm": 1036,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 33, 24, 24, 21 ]
+   ],
+   [ 13,
+    [ 28, 20, 20, 18 ]
+   ],
+   [ 22,
+    [ 27, 20, 20, 17 ]
    ]
   ],
   "attachments": [],
@@ -2737,10 +2783,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 45, 33, 33, 30 ]
+    [ 45, 33, 30, 30 ]
    ],
-   [ 38,
-    [ 38, 28, 28, 26 ]
+   [ 36,
+    [ 38, 28, 26, 26 ]
    ]
   ],
   "attachments": [
@@ -2805,6 +2851,26 @@ DEFAULT_GUNS = [
     "slot": "Laser"
    }
   ],
+  "is_custom": false,
+  "selected_attachments": [],
+  "advanced_options": []
+ },
+ {
+  "name": "Krig 6 (Pre-nerf)",
+  "display_name": "Krig 6 (Pre-nerf)",
+  "attachments_type": "Krig 6 (Pre-nerf)",
+  "type": "AR",
+  "rpm": 652,
+  "open_bolt_delay_ms": 0,
+  "default_damage_profile": [
+   [ 0,
+    [ 45, 33, 33, 30 ]
+   ],
+   [ 38,
+    [ 38, 28, 28, 26 ]
+   ]
+  ],
+  "attachments": [],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []
@@ -3011,10 +3077,10 @@ DEFAULT_GUNS = [
   "open_bolt_delay_ms": 0,
   "default_damage_profile": [
    [ 0,
-    [ 64, 40, 40, 40 ]
+    [ 72, 40, 40, 40 ]
    ],
    [ 80,
-    [ 64, 40, 40, 40 ]
+    [ 72, 40, 40, 40 ]
    ]
   ],
   "attachments": [
@@ -4151,7 +4217,78 @@ DEFAULT_GUNS = [
     [ 27, 20, 20, 18 ]
    ]
   ],
-  "attachments": [],
+  "attachments": [
+   {
+    "gun_name": "OTs 9",
+    "att_name": "Sound Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 0.85
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "OTs 9",
+    "att_name": "Gru Suppressor",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.1
+    },
+    "alt_damage_profile": null,
+    "slot": "Muzzle"
+   },
+   {
+    "gun_name": "OTs 9",
+    "att_name": "VDV Reinforced",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.06
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "OTs 9",
+    "att_name": "Rifled",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.06
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "OTs 9",
+    "att_name": "Task Force",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.13
+    },
+    "alt_damage_profile": null,
+    "slot": "Barrel"
+   },
+   {
+    "gun_name": "OTs 9",
+    "att_name": "KGB Target Designator",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.04
+    },
+    "alt_damage_profile": null,
+    "slot": "Laser"
+   },
+   {
+    "gun_name": "OTs 9",
+    "att_name": "Ember Sighting Point",
+    "modifiers": {
+     "rpm_mod": 1,
+     "range_mod": 1.08
+    },
+    "alt_damage_profile": null,
+    "slot": "Laser"
+   }
+  ],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []
@@ -4652,26 +4789,6 @@ DEFAULT_GUNS = [
     "slot": "Barrel"
    }
   ],
-  "is_custom": false,
-  "selected_attachments": [],
-  "advanced_options": []
- },
- {
-  "name": "RAAL MG",
-  "display_name": "RAAL MG",
-  "attachments_type": "RAAL MG",
-  "type": "LMG",
-  "rpm": 550,
-  "open_bolt_delay_ms": 67,
-  "default_damage_profile": [
-   [ 0,
-    [ 62, 50, 42, 39 ]
-   ],
-   [ 61,
-    [ 57, 46, 39, 36 ]
-   ]
-  ],
-  "attachments": [],
   "is_custom": false,
   "selected_attachments": [],
   "advanced_options": []

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Full Screen Clock</title>
+  <style>
+    body {
+      background-color: white; 
+      color: black;
+      font-family: monospace;
+      font-size: 35em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0; /* Remove default body margins */
+    }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+
+  <script>
+    function showTime() {
+      const clock = document.getElementById('clock');
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+
+      clock.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // Initial call to display time immediately
+    showTime();
+
+    // Update time every second
+    setInterval(showTime, 1000);
+  </script>
+</body>
+</html>
